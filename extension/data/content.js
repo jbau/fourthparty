@@ -1,5 +1,22 @@
+
+
+//FOURTH-PARTY content.js
 // Wrap in a function closure to hide variables
 (function () {
+
+var request = new XMLHttpRequest();
+request.open('GET', document.location, false); 
+request.send(null);
+
+var staticHTML = "";
+
+if (request.status == 200) {
+  staticHTML = request.responseText;
+  self.port.emit('staticHTML', {
+    src:document.location,
+    html:staticHTML});
+}
+
 
 // Bypass the Jetpack DOM wrapper
 //let(window = unsafeWindow) {
@@ -109,7 +126,7 @@ function logValue(instrumentedVariableName, value, operation) {
 		return;
 	inLog = true;
 	try {
-		self.port.emit("instrumentation", {
+		self.port.f("instrumentation", {
 			operation: operation,
 			symbol: instrumentedVariableName,
 			value: serializeObject(value)
@@ -325,11 +342,46 @@ function makeFunctionProxy(object, functionName, func) {
 	},
 	function() {
 		logCall(functionName, arguments);
+        if (functionName == "document.createElement" && 
+            arguments[0]=="script") {
+            //try{throw new Error("StackTrace");}
+            //catch (e){};
+            var scr = func.apply(object,arguments);
+            //scr.addEventListener('load',alert_source(scr));
+            //scr.setAttribute('__fp_sTag',  document.location + ":" + (s_tag++));
+            scr.setAttribute('__fp_curScriptDuringCreate',  document.currentScript.getAttribute('__fp_tag'));
+            return scr;
+            //console.log(object.location);
+            //console.trace();            
+        }
+        if (functionName == "document.write" && 
+            arguments[0].indexOf("script") != -1) {
+            var tmp_arg = arguments[0];
+            var replacement = '<script __fp_curScriptDuringCreate="' + document.currentScript.getAttribute('__fp_tag') + '" '; 
+            //alert(replacement);
+            arguments[0]=tmp_arg.replace(/<script/gi, replacement); 
+            //try{throw new Error("StackTrace");}
+            //catch (e){};
+            //console.log(object.location);
+            //console.trace();
+        }
 		return func.apply(object, arguments);
 	},
 	function() {
 		return null;
 	});
+}
+
+var s_tag = 0;
+
+/*
+document.onbeforescriptexecute = function(e) {
+        alert(document.currentScript);
+    };
+*/
+
+function alert_source(arg){
+    return function(){alert(arg.src)};
 }
 
 // Make an instrumented object handler
@@ -429,6 +481,28 @@ instrumentObjectPropertyAsObject(window, "window", window.sessionStorage, "sessi
 // WORKS
 // TODO: Better represent the element called on
 window.__defineGetter__("getComputedStyle", makeFunctionProxyHandler(window, "window.getComputedStyle", window.getComputedStyle));
+
+document.__defineGetter__("createElement", makeFunctionProxyHandler(document, "document.createElement", document.createElement));
+
+document.__defineGetter__("write", makeFunctionProxyHandler(document, "document.write", document.write));
+
+
+
+function createWrapper(f) {
+    var orig = f;
+    orig.call = Function.prototype.call;
+    return function (x) { console.log(getStackTrace());
+                          return orig.call(this,x);
+                          };
+}
+
+//document.createElement = createWrapper(document.createElement);
+
+//var orig=document.createElement;
+//document.createElement= function(x) {
+//    console.trace();
+//    alert(document.createElement.caller);
+//}
 
 // Instrument window.name
 // WORKS

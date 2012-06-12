@@ -4,6 +4,7 @@ var httpInstrument = require("http-instrument");
 var cookieInstrument = require("cookie-instrument");
 var jsInstrument = require("javascript-instrument");
 var cpInstrument = require("content-policy-instrument");
+var jsdInstrument = require("jsd");
 
 exports.main = function(options, callbacks) {
 	loggingDB.open();
@@ -12,4 +13,5 @@ exports.main = function(options, callbacks) {
 	cookieInstrument.run();
     jsInstrument.run();
     cpInstrument.run();
+    jsdInstrument.run();
 };

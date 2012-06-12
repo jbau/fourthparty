@@ -9,6 +9,7 @@ exports.run = function() {
 	// Set up logging
 	var createContentPolicyTable = data.load("create_content_policy_table.sql");
 	loggingDB.executeSQL(createContentPolicyTable, false);
+	console.log('started fp');
 
 	// Instrument content policy API
 	// Provides additional information about what caused a request and what it's for

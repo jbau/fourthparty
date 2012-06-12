@@ -3,6 +3,12 @@ const data = require("self").data;
 var loggingDB = require("logging-db");
 var pageManager = require("page-manager");
 var tabs = require("tabs");
+var jsdI = require('jsd');
+
+
+tabs.on('ready',function(tab){
+    jsdI.clearHTMLStore();
+});
 
 exports.run = function() {
 
@@ -30,7 +36,7 @@ exports.run = function() {
 				update["operation"] = loggingDB.escapeString(data.operation);
 				update["value"] = loggingDB.escapeString(data.value);
 
-				loggingDB.executeSQL(loggingDB.createInsert("javascript", update), true);
+				loggingDB.executeSQL(loggingDB.createInsert("javascript", update), true);   
 				
 				if(data.operation == "call") {
 					var call_update = {};
@@ -44,8 +50,18 @@ exports.run = function() {
 				
 				javascriptID++;
 			});
+            
+           worker.port.on('staticHTML', function(data) {
+                jsdI.recordHTML(data.src,data.html);
+           }); 
 
 		}
 	});
+    
+    pageMod.PageMod({
+        include: "*",
+		contentScriptWhen: "ready",
+		contentScriptFile: data.url("ready.js")
+    });
 	
 };
