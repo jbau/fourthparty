@@ -32,15 +32,22 @@ exports.run = function() {
 				
 				update["id"] = javascriptID;
 				update["page_id"] = pageID;
-                update["disposition"] = data.disposition;//inline or external
-                update["creator_script_id"] = data.creatorID;//the script ID of the creator
-                update["created_method"] = data.method;//how was the script created? doc.createElement etc.
-                update["is_static"]= data.is_static;//if script fetched statically? or dynamically
-                update["location"]=data.location;//location of the script origin+path
+				update["symbol"] = loggingDB.escapeString(data.symbol);
+				update["operation"] = loggingDB.escapeString(data.operation);
+				update["value"] = loggingDB.escapeString(data.value);
 
 				loggingDB.executeSQL(loggingDB.createInsert("javascript", update), true);   
 				
-							
+				if(data.operation == "call") {
+					var call_update = {};
+					call_update["javascript_id"] = javascriptID;
+					for(var i = 0; i < data.args.length; i++) {
+						call_update["parameter_index"] = i;
+						call_update["value"] = loggingDB.escapeString(data.args[i]);
+						loggingDB.executeSQL(loggingDB.createInsert("javascript_calls", call_update), true);
+					}
+				}
+				
 				javascriptID++;
 			});
             

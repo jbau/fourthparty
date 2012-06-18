@@ -95,7 +95,7 @@ exports.clearHTMLStore = function() {
 
 exports.run = function() {
 
-
+    /*
     jsd.scriptHook = {
         onScriptCreated: function(script) {
             var patt = new RegExp("^(http|https):\/\/","i");
@@ -146,11 +146,11 @@ exports.run = function() {
             stackTrace += f.script.fileName + "@" + f.line + "@" + f.functionName + "\n";
         }
         dump(stackTrace);
-
+        console.log(stackTrace);
         return Ci.jsdIExecutionHook.RETURN_CONTINUE;
         }
     };
-    
+   */ 
     /*
     
     jsd.throwHook = {
