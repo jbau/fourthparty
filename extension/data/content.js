@@ -355,7 +355,9 @@ function makeFunctionProxy(object, functionName, func) {
             //console.trace();
         }
 
-		logCall(functionName, arguments);
+
+        self.port.emit('instrumentation',{});
+		//logCall(functionName, arguments);
 		return func.apply(object, arguments);
 	},
 	function() {

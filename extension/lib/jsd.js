@@ -15,7 +15,12 @@ const COMPONENTS_FILTERS = [
 ];
 
 
-
+var js_instrument = require("javascript-instrument");
+var pageMod = require("page-mod");
+const data = require("self").data;
+var loggingDB = require("logging-db");
+var pageManager = require("page-manager");
+var tabs = require("tabs");
 
 var urlFilters = [
     'chrome://',
@@ -84,7 +89,7 @@ var createChromeBlockingFilters = function() // call after components are loaded
 
 var js_tags=0;
 var staticHTMLs = {};
-exports.recordHTML = function(src,html) {
+recordHTML = function(src,html) {
     staticHTMLs[src]=html;
     //console.log(src+":"+html);
 }
@@ -95,7 +100,124 @@ exports.clearHTMLStore = function() {
 
 exports.run = function() {
 
-    /*
+         
+	// Set up logging
+	var createJavascriptTable = data.load("create_javascript_table.sql");
+	loggingDB.executeSQL(createJavascriptTable, false);
+	var createJavascriptCallsTable = data.load("create_javascript_calls_table.sql");
+	loggingDB.executeSQL(createJavascriptCallsTable, false);
+	var javascriptID = 0;
+	
+	// Inject content script to instrument JavaScript API
+	pageMod.PageMod({
+		include: "*",
+		contentScriptWhen: "start",
+		contentScriptFile: data.url("content.js"),
+		onAttach: function onAttach(worker) {
+			var pageID = worker.windowID;
+
+			worker.port.on("instrumentation", function(data) {
+				/*
+                var update = {};
+				
+				update["id"] = javascriptID;
+				update["page_id"] = pageID;
+                update["disposition"] = data.disposition;//inline or external
+                update["creator_script_id"] = data.creatorID;//the script ID of the creator
+                update["created_method"] = data.method;//how was the script created? doc.createElement etc.
+                update["is_static"]= data.is_static;//if script fetched statically? or dynamically
+                update["location"]=data.location;//location of the script origin+path
+
+				loggingDB.executeSQL(loggingDB.createInsert("javascript", update), true);   
+			*/
+
+                dump("working!\n");
+				javascriptID++;
+			});
+            
+           worker.port.on('staticHTML', function(data) {
+                recordHTML(data.src,data.html);
+           }); 
+
+		}
+	});
+    
+    pageMod.PageMod({
+        include: "*",
+		contentScriptWhen: "ready",
+		contentScriptFile: data.url("ready.js")
+    });
+
+    
+    
+    jsd.topLevelHook = {
+        onCall: function(frame, type) {
+            var patt = new RegExp("^(http|https):\/\/","i");
+            if (patt.test(frame.script.fileName) &&  type == Ci.jsdICallHook.TYPE_TOPLEVEL_START) {
+                var result={};
+                var fileNameWODomain = frame.script.fileName.slice(frame.script.fileName.lastIndexOf('/')+1); 
+                //dump('"'+frame.script.fileName+ '"\n');
+                //dump('"'+fileNameWODomain + '"\n');
+                frame.eval("if(!document.currentScript.hasAttribute('__fp_tag'))"+
+                           "document.currentScript.setAttribute('__fp_tag',"+(js_tags++)+")","",1,result); //js_tag is the javascript tag?
+                var location = frame.executionContext.globalObject.getWrappedValue().document.location;
+
+		//dump('script_location:'+frame.script.fileName+'\n');               
+
+
+		var result4={};
+		frame.eval( "self.port.emit('instrumentation',{})","",1,result4);
+
+		//self.port.emit('instrumentation',{});
+ 
+		var result2={};
+                frame.eval("document.currentScript.setAttribute('__fp_execOnPage','"+location+"')","",1,result2);
+                //dump(staticHTMLs[location].toLowerCase());
+                
+		var result3={};
+		frame.eval("console.log(document.currentScript.getAttribute('__fp_curScriptDuringCreate'))","",1,result3);
+               
+                //Test for script filename in the static source of the document.  If found, then
+                //document.location is the parent of the current script (encode with -1).  
+                if(fileNameWODomain != "" && staticHTMLs[location]!=null && 
+                   staticHTMLs[location].toLowerCase().indexOf(fileNameWODomain.toLowerCase()) >= 0) {
+                     frame.eval("if(!document.currentScript.hasAttribute('__fp_curScriptDuringCreate'))"+
+                                "document.currentScript.setAttribute('__fp_curScriptDuringCreate',-1);","",1,result);
+                }
+                else {//Try to see if the script source code is in the static HTML.  Again, if found,
+                      //document.location is the parent of the current script (encode with -1).
+                    if (staticHTMLs[location].toLowerCase().indexOf(
+                         frame.script.functionSource.toLowerCase().slice(0,63))) {
+                            frame.eval("if(!document.currentScript.hasAttribute('__fp_curScriptDuringCreate'))"+
+                                      "document.currentScript.setAttribute('__fp_curScriptDuringCreate',-1);","",1,result);
+                            }
+
+                }
+            }
+        }
+    }
+    
+    
+    jsd.asyncOn(function(){
+    
+        jsd.clearFilters(); // clear the list of filters
+
+                        
+        // we exclude the scripts with the following filenames from being tracked
+        jsd.appendFilter(createFilter("*/firefox/components/*"));
+        jsd.appendFilter(createFilter("*/firefox/modules/*"));
+        jsd.appendFilter(createFilter("XStringBundle"));
+        jsd.appendFilter(createFilter("chrome://*"));
+        jsd.appendFilter(createFilter("resource:///*"));
+        jsd.appendFilter(createFilter("x-jsd:ppbuffer*"));
+        jsd.appendFilter(createFilter("XPCSafeJSObjectWrapper.cpp"));
+        jsd.appendFilter(createFilter("file://*"));
+
+   
+    
+    });
+
+	/*
     jsd.scriptHook = {
         onScriptCreated: function(script) {
             var patt = new RegExp("^(http|https):\/\/","i");
@@ -168,66 +290,6 @@ exports.run = function() {
         }
     };
     */
-    
-    
-    
-    jsd.topLevelHook = {
-        onCall: function(frame, type) {
-            var patt = new RegExp("^(http|https):\/\/","i");
-            if (patt.test(frame.script.fileName) &&  type == Ci.jsdICallHook.TYPE_TOPLEVEL_START) {
-                var result={};
-                var fileNameWODomain = frame.script.fileName.slice(frame.script.fileName.lastIndexOf('/')+1); 
-                //dump('"'+frame.script.fileName+ '"\n');
-                //dump('"'+fileNameWODomain + '"\n');
-                frame.eval("if(!document.currentScript.hasAttribute('__fp_tag'))"+
-                           "document.currentScript.setAttribute('__fp_tag',"+(js_tags++)+")","",1,result);
-                var location = frame.executionContext.globalObject.getWrappedValue().document.location;
-                //dump (location);
-                var result2={};
-                frame.eval("document.currentScript.setAttribute('__fp_execOnPage','"+location+"')","",1,result2);
-                //dump(staticHTMLs[location].toLowerCase());
-                
-		var result3={};
-		frame.eval("console.log(document.currentScript.getAttribute('__fp_curScriptDuringCreate'))","",1,result3);
-               
-                //Test for script filename in the static source of the document.  If found, then
-                //document.location is the parent of the current script (encode with -1).  
-                if(fileNameWODomain != "" && staticHTMLs[location]!=null && 
-                   staticHTMLs[location].toLowerCase().indexOf(fileNameWODomain.toLowerCase()) >= 0) {
-                     frame.eval("if(!document.currentScript.hasAttribute('__fp_curScriptDuringCreate'))"+
-                                "document.currentScript.setAttribute('__fp_curScriptDuringCreate',-1);","",1,result);
-                }
-                else {//Try to see if the script source code is in the static HTML.  Again, if found,
-                      //document.location is the parent of the current script (encode with -1).
-                    if (staticHTMLs[location].toLowerCase().indexOf(
-                         frame.script.functionSource.toLowerCase().slice(0,63))) {
-                            frame.eval("if(!document.currentScript.hasAttribute('__fp_curScriptDuringCreate'))"+
-                                      "document.currentScript.setAttribute('__fp_curScriptDuringCreate',-1);","",1,result);
-                            }
 
-                }
-            }
-        }
-    }
-    
-    
-    jsd.asyncOn(function(){
-    
-        jsd.clearFilters(); // clear the list of filters
-
-                        
-        // we exclude the scripts with the following filenames from being tracked
-        jsd.appendFilter(createFilter("*/firefox/components/*"));
-        jsd.appendFilter(createFilter("*/firefox/modules/*"));
-        jsd.appendFilter(createFilter("XStringBundle"));
-        jsd.appendFilter(createFilter("chrome://*"));
-        jsd.appendFilter(createFilter("resource:///*"));
-        jsd.appendFilter(createFilter("x-jsd:ppbuffer*"));
-        jsd.appendFilter(createFilter("XPCSafeJSObjectWrapper.cpp"));
-        jsd.appendFilter(createFilter("file://*"));
-
-   
-    
-    });
 
 }

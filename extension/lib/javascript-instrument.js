@@ -28,7 +28,8 @@ exports.run = function() {
 			var pageID = worker.windowID;
 
 			worker.port.on("instrumentation", function(data) {
-				var update = {};
+				/*
+                var update = {};
 				
 				update["id"] = javascriptID;
 				update["page_id"] = pageID;
@@ -39,8 +40,9 @@ exports.run = function() {
                 update["location"]=data.location;//location of the script origin+path
 
 				loggingDB.executeSQL(loggingDB.createInsert("javascript", update), true);   
-				
-							
+			*/
+
+                dump("working!\n");
 				javascriptID++;
 			});
             
