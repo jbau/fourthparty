@@ -131,7 +131,7 @@ exports.run = function() {
 				loggingDB.executeSQL(loggingDB.createInsert("javascript", update), true);   
 			*/
 
-                dump("working!\n");
+                //dump("working!\n");
 				javascriptID++;
 			});
             
@@ -165,18 +165,24 @@ exports.run = function() {
 		//dump('script_location:'+frame.script.fileName+'\n');               
 
 
-		var result4={};
-		frame.eval( "self.port.emit('instrumentation',{})","",1,result4);
+		//var result4={};
+		//frame.eval( "self.port.emit('instrumentation',{})","",1,result4);
 
 		//self.port.emit('instrumentation',{});
  
 		var result2={};
-                frame.eval("document.currentScript.setAttribute('__fp_execOnPage','"+location+"')","",1,result2);
-                //dump(staticHTMLs[location].toLowerCase());
+        frame.eval("document.currentScript.setAttribute('__fp_execOnPage','"+location+"')","",1,result2);
+        //dump(staticHTMLs[location].toLowerCase());
                 
-		var result3={};
-		frame.eval("console.log(document.currentScript.getAttribute('__fp_curScriptDuringCreate'))","",1,result3);
-               
+        var result3={};
+		frame.eval("document.currentScript.getAttribute('__fp_curScriptDuringCreate')","",1,result3);
+                
+        var unwrapped=result3.value.getWrappedValue();
+                    
+                console.log("test:"+unwrapped+"\n");
+      
+         //       console.log(XPCSafeJSObjectWrapper(unwrapped));   
+                            
                 //Test for script filename in the static source of the document.  If found, then
                 //document.location is the parent of the current script (encode with -1).  
                 if(fileNameWODomain != "" && staticHTMLs[location]!=null && 
