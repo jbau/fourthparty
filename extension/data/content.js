@@ -57,6 +57,8 @@ function getPathToDomElement(element) {
         	if(element.tagName == 'A')
         		path += ',' + element.href;
         	path += ']';
+		
+//console.log(path);
         	return path;
         }
         if (sibling.nodeType == 1 && sibling.tagName == element.tagName)
@@ -151,25 +153,12 @@ function logCall(instrumentedFunctionName, args) {
 		return;
 	inLog = true;
 	try {	
-		/*
-		console.log("logCall");
-		console.log("Function Name: " + instrumentedFunctionName);
-		console.log("Args: " + args.length);
-		for(var i = 0; i < args.length; i++) {
-			var logLine = "Arg " + i + ": ";
-			console.log(logLine + typeof args[i]);
-			if(typeof args[i] == "string")
-				console.log(logLine + args[i]);
-			if(typeof args[i] == "object") {
-				console.log("" + args[i]);
-				console.log("" + args[i].wrappedJSObject);
-				console.log(logLine + Object.keys(args[i]));
-			}
-		}*/
 		// Convert special arguments array to a standard array for JSONifying
 		var serialArgs = [ ];
 		for(var i = 0; i < args.length; i++)
 			serialArgs.push(serializeObject(args[i]));
+
+		//receiver located in javascript-instruments.js
 		self.port.emit("instrumentation", {
 			operation: "call",
 			symbol: instrumentedFunctionName,
@@ -341,9 +330,9 @@ function makeFunctionProxy(object, functionName, func) {
 		}
 	},
 	function() {
-		logCall(functionName, arguments);
+		//the 'arguments' variable stores the argument for the function that's being hooked (i.e., createElement)
         if (functionName == "document.createElement" && 
-            arguments[0]=="script") {
+            arguments[0]=="script") { 
             //try{throw new Error("StackTrace");}
             //catch (e){};
             var scr = func.apply(object,arguments);
@@ -365,6 +354,10 @@ function makeFunctionProxy(object, functionName, func) {
             //console.log(object.location);
             //console.trace();
         }
+
+
+        self.port.emit('instrumentation',{});
+		//logCall(functionName, arguments);
 		return func.apply(object, arguments);
 	},
 	function() {
