@@ -339,6 +339,8 @@ function makeFunctionProxy(object, functionName, func) {
             //scr.addEventListener('load',alert_source(scr));
             //scr.setAttribute('__fp_sTag',  document.location + ":" + (s_tag++));
             scr.setAttribute('__fp_curScriptDuringCreate',  document.currentScript.getAttribute('__fp_tag'));
+            scr.setAttribute('__fp_creationMethod',  'document.createElement');
+
             return scr;
             //console.log(object.location);
             //console.trace();            
@@ -346,7 +348,7 @@ function makeFunctionProxy(object, functionName, func) {
         if (functionName == "document.write" && 
             arguments[0].indexOf("script") != -1) {
             var tmp_arg = arguments[0];
-            var replacement = '<script __fp_curScriptDuringCreate="' + document.currentScript.getAttribute('__fp_tag') + '" '; 
+            var replacement = '<script __fp_curScriptDuringCreate="' + document.currentScript.getAttribute('__fp_tag') + '" __fp_creationMethod="document.write" '; 
             //alert(replacement);
             arguments[0]=tmp_arg.replace(/<script/gi, replacement); 
             //try{throw new Error("StackTrace");}
