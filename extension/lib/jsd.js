@@ -15,13 +15,6 @@ const COMPONENTS_FILTERS = [
 ];
 
 
-var js_instrument = require("javascript-instrument");
-var pageMod = require("page-mod");
-const data = require("self").data;
-var loggingDB = require("logging-db");
-var pageManager = require("page-manager");
-var tabs = require("tabs");
-
 var urlFilters = [
     'chrome://',
     'XStringBundle',
@@ -89,7 +82,7 @@ var createChromeBlockingFilters = function() // call after components are loaded
 
 var js_tags=0;
 var staticHTMLs = {};
-recordHTML = function(src,html) {
+exports.recordHTML = function(src,html) {
     staticHTMLs[src]=html;
     //console.log(src+":"+html);
 }
@@ -100,55 +93,6 @@ exports.clearHTMLStore = function() {
 
 exports.run = function() {
 
-         
-	// Set up logging
-	var createJavascriptTable = data.load("create_javascript_table.sql");
-	loggingDB.executeSQL(createJavascriptTable, false);
-	var createJavascriptCallsTable = data.load("create_javascript_calls_table.sql");
-	loggingDB.executeSQL(createJavascriptCallsTable, false);
-	var javascriptID = 0;
-	
-	// Inject content script to instrument JavaScript API
-	pageMod.PageMod({
-		include: "*",
-		contentScriptWhen: "start",
-		contentScriptFile: data.url("content.js"),
-		onAttach: function onAttach(worker) {
-			var pageID = worker.windowID;
-
-			worker.port.on("instrumentation", function(data) {
-				/*
-                var update = {};
-				
-				update["id"] = javascriptID;
-				update["page_id"] = pageID;
-                update["disposition"] = data.disposition;//inline or external
-                update["creator_script_id"] = data.creatorID;//the script ID of the creator
-                update["created_method"] = data.method;//how was the script created? doc.createElement etc.
-                update["is_static"]= data.is_static;//if script fetched statically? or dynamically
-                update["location"]=data.location;//location of the script origin+path
-
-				loggingDB.executeSQL(loggingDB.createInsert("javascript", update), true);   
-			*/
-
-                //dump("working!\n");
-				javascriptID++;
-			});
-            
-           worker.port.on('staticHTML', function(data) {
-                recordHTML(data.src,data.html);
-           }); 
-
-		}
-	});
-    
-    pageMod.PageMod({
-        include: "*",
-		contentScriptWhen: "ready",
-		contentScriptFile: data.url("ready.js")
-    });
-
-    
     
     jsd.topLevelHook = {
         onCall: function(frame, type) {
@@ -162,11 +106,10 @@ exports.run = function() {
                            "document.currentScript.setAttribute('__fp_tag',"+(js_tags++)+")","",1,result); //js_tag is the javascript tag?
                 var location = frame.executionContext.globalObject.getWrappedValue().document.location;
 
-		//dump('script_location:'+frame.script.fileName+'\n');               
+		dump('script_location:'+frame.script.fileName+'\n');               
 
 
 		//var result4={};
-		//frame.eval( "self.port.emit('instrumentation',{})","",1,result4);
 
 		//self.port.emit('instrumentation',{});
  
