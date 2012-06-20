@@ -171,9 +171,10 @@ exports.run = function() {
             dump('checkpoint0 reached:'+ fileNameWODomain+ '\n');
          	//console.log(XPCSafeJSObjectWrapper(unwrapped));   
             var result3 = {}
-            var myscript = {};
-            frame.eval("document.currentScript","",1,myscript);
-            //console.log(myscript.value.getWrappedValue());
+            var raw_script = {};
+            frame.eval("document.currentScript","",1,raw_script);
+            var myscript=raw_script.value.getWrappedValue();
+            
             
             dump('checkpoint1 reached\n');               
             
@@ -236,8 +237,7 @@ exports.run = function() {
                 else {//Try to see if the script source code is in the static HTML.  Again, if found,
                     //document.location is the parent of the current script (encode with -1).
                     //dump(staticHTMLs[location]+"\n");
-                    if (staticHTMLs[location].toLowerCase().indexOf(
-                                                                    frame.script.functionSource.toLowerCase().slice(0,63)) >= 0) {
+                    if (staticHTMLs[location].toLowerCase().indexOf(myscript.innerHTML.slice(0,63)) >= 0) {
                         dump('third\n');
                         frame.eval("if(!document.currentScript.hasAttribute('__fp_curScriptDuringCreate'))"+
                                    "document.currentScript.setAttribute('__fp_curScriptDuringCreate',-1);","",1,result3);
@@ -280,13 +280,13 @@ exports.run = function() {
                 if (!deferred_scripts.hasOwnProperty(location)) deferred_scripts[location]=[];
                 //gather up the object to be written
                 //once we do the deferred check for creator_script_id, we'll write the stuff to db.
-                deferred_scripts[location].push({script: myscript.value.getWrappedValue(), tag: scriptTag, page_id:pageID, 
+                deferred_scripts[location].push({script: myscript, tag: scriptTag, page_id:pageID, 
                                                  document_location:loggingDB.escapeString(location), disposition:loggingDB.escapeString(disposition),
                                                 created_method:loggingDB.escapeString(method), is_static:is_static, 
                                                 script_src:loggingDB.escapeString(ext_script_location), 
                                                 code_snippet:loggingDB.escapeString(snippet)});
                 
-                                
+
             }
             
         }
