@@ -144,6 +144,14 @@ exports.clearHTMLStore = function() {
     deferred_scripts={};
 }
 
+
+//trim function
+String.prototype.trim=function(){
+	return this.replace(/\s+|[^A-Za-z0-9_]/g,"");
+}
+
+
+
 exports.run = function() {
     
 	var createJavascriptTable = data.load("create_javascript_table.sql");
@@ -159,7 +167,7 @@ exports.run = function() {
             frame.eval("if(!document.currentScript.hasAttribute('__fp_tag'))"+
                        "document.currentScript.setAttribute('__fp_tag',"+(js_tags)+")","",1,result); //js_tag is the javascript tag?
             
-            dump('script_location:'+frame.script.fileName+'\n');               
+            //dump('script_location:'+frame.script.fileName+'\n');               
             
             var location = frame.executionContext.globalObject.getWrappedValue().document.location;
             //var result2={};
@@ -168,7 +176,7 @@ exports.run = function() {
 			
             
             
-            dump('checkpoint0 reached:'+ fileNameWODomain+ '\n');
+            //dump('checkpoint0 reached:'+ fileNameWODomain+ '\n');
          	//console.log(XPCSafeJSObjectWrapper(unwrapped));   
             var result3 = {}
             var raw_script = {};
@@ -176,7 +184,7 @@ exports.run = function() {
             var myscript=raw_script.value.getWrappedValue();
             
             
-            dump('checkpoint1 reached\n');               
+            //dump('checkpoint1 reached\n');               
             
             //many of the attributes below are set in other files
             
@@ -191,7 +199,7 @@ exports.run = function() {
             var pageID = raw_pageID.value.getWrappedValue();
             pageID=-1; /////////HARDCODING THIS FOR NOW
             
-            dump('checkpoint2 reached\n');               
+            //dump('checkpoint2 reached\n');               
             
             var raw_src = {};
             var disposition; // 0 is inline, 1 is external
@@ -205,7 +213,7 @@ exports.run = function() {
             
             if (disposition=="external")ext_script_location = src;	//if the script is external, then we fetch the real src
             
-            dump('checkpoint3 reached\n');               
+            //dump('checkpoint3 reached\n');               
             
             var raw_method={};
             frame.eval("document.currentScript.getAttribute('__fp_creationMethod')","",1,raw_method);
@@ -217,8 +225,8 @@ exports.run = function() {
 
             
             dump('++++++++SRC++++++++\n');
-            dump(frame.script.functionSource);
-            dump('--------SRC--------\n');
+            dump(frame.script.functionSource.trim());
+            dump('\n--------SRC--------\n');
             
             //use staticHTML of the page to determine if currentScript is installed by the HTML source
             //but can only do this if we already got the staticHTML
@@ -230,7 +238,7 @@ exports.run = function() {
                 if(fileNameWODomain != ""  && 
                    staticHTMLs[location].toLowerCase().indexOf(fileNameWODomain.toLowerCase()) >= 0) {
                     
-                    dump('first\n');
+                    //dump('first\n');
                     frame.eval("if(!document.currentScript.hasAttribute('__fp_curScriptDuringCreate'))"+
                                "document.currentScript.setAttribute('__fp_curScriptDuringCreate',-1);","",1,result3);
                 }
@@ -238,7 +246,7 @@ exports.run = function() {
                     //document.location is the parent of the current script (encode with -1).
                     //dump(staticHTMLs[location]+"\n");
                     if (staticHTMLs[location].toLowerCase().indexOf(myscript.innerHTML.slice(0,63)) >= 0) {
-                        dump('third\n');
+                        //dump('third\n');
                         frame.eval("if(!document.currentScript.hasAttribute('__fp_curScriptDuringCreate'))"+
                                    "document.currentScript.setAttribute('__fp_curScriptDuringCreate',-1);","",1,result3);
                     }
@@ -267,7 +275,7 @@ exports.run = function() {
                 update["code_snippet"] = loggingDB.escapeString(snippet);
                 
                 
-                dump('checkpoint4 reached\n');
+                //dump('checkpoint4 reached\n');
                 
                 loggingDB.executeSQL(loggingDB.createInsert("javascript",update),false);
                 
