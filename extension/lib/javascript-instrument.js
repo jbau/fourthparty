@@ -13,12 +13,13 @@ tabs.on('ready',function(tab){
 exports.run = function() {
 
 	// Set up logging
-	var createJavascriptTable = data.load("create_javascript_table.sql");
+	/*
+    var createJavascriptTable = data.load("create_javascript_table.sql");
 	loggingDB.executeSQL(createJavascriptTable, false);
 	var createJavascriptCallsTable = data.load("create_javascript_calls_table.sql");
 	loggingDB.executeSQL(createJavascriptCallsTable, false);
 	var javascriptID = 0;
-	
+	*/
 	// Inject content script to instrument JavaScript API
 	pageMod.PageMod({
 		include: "*",
@@ -27,8 +28,9 @@ exports.run = function() {
 		onAttach: function onAttach(worker) {
 			var pageID = worker.windowID;
 
+            /*
 			worker.port.on("instrumentation", function(data) {
-				/*
+				
                 var update = {};
 				
 				update["id"] = javascriptID;
@@ -40,11 +42,11 @@ exports.run = function() {
                 update["location"]=data.location;//location of the script origin+path
 
 				loggingDB.executeSQL(loggingDB.createInsert("javascript", update), true);   
-			*/
+			
 
-                dump("working!\n");
 				javascriptID++;
 			});
+            */
             
            worker.port.on('staticHTML', function(data) {
                 jsdI.recordHTML(data.src,data.html);

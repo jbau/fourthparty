@@ -93,5 +93,8 @@ exports.createInsert = function(table, update) {
 		first = false;
 	}
 	statement = statement + ") " + values + ")";
+
+    if(table == "javascript")dump("sql:"+statement+"\n");
+
 	return statement;
 }

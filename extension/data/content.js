@@ -340,6 +340,7 @@ function makeFunctionProxy(object, functionName, func) {
             //scr.setAttribute('__fp_sTag',  document.location + ":" + (s_tag++));
             scr.setAttribute('__fp_curScriptDuringCreate',  document.currentScript.getAttribute('__fp_tag'));
             scr.setAttribute('__fp_creationMethod',  'document.createElement');
+            src.setAttribute('__fp_pageID',self.windowID);
 
             return scr;
             //console.log(object.location);
@@ -348,7 +349,7 @@ function makeFunctionProxy(object, functionName, func) {
         if (functionName == "document.write" && 
             arguments[0].indexOf("script") != -1) {
             var tmp_arg = arguments[0];
-            var replacement = '<script __fp_curScriptDuringCreate="' + document.currentScript.getAttribute('__fp_tag') + '" __fp_creationMethod="document.write" '; 
+            var replacement = '<script __fp_curScriptDuringCreate="' + document.currentScript.getAttribute('__fp_tag') + '" __fp_creationMethod="document.write" '+' __fp_pageID="'+self.windowID+'"'; 
             //alert(replacement);
             arguments[0]=tmp_arg.replace(/<script/gi, replacement); 
             //try{throw new Error("StackTrace");}
@@ -358,7 +359,7 @@ function makeFunctionProxy(object, functionName, func) {
         }
 
 
-        self.port.emit('instrumentation',{});
+        //self.port.emit('instrumentation',{});
 		//logCall(functionName, arguments);
 		return func.apply(object, arguments);
 	},

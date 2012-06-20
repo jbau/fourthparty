@@ -14,6 +14,9 @@ const COMPONENTS_FILTERS = [
     new RegExp("^(file:/.*/modules/).*\\.jsm$"),
 ];
 
+const data = require("self").data;
+var pageManager = require("page-manager");
+var loggingDB = require("logging-db");
 
 var urlFilters = [
     'chrome://',
@@ -93,55 +96,102 @@ exports.clearHTMLStore = function() {
 
 exports.run = function() {
 
+	var createJavascriptTable = data.load("create_javascript_table.sql");
+	loggingDB.executeSQL(createJavascriptTable, false);
     
     jsd.topLevelHook = {
         onCall: function(frame, type) {
             var patt = new RegExp("^(http|https):\/\/","i");
             if (patt.test(frame.script.fileName) &&  type == Ci.jsdICallHook.TYPE_TOPLEVEL_START) {
                 var result={};
-                var fileNameWODomain = frame.script.fileName.slice(frame.script.fileName.lastIndexOf('/')+1); 
-                //dump('"'+frame.script.fileName+ '"\n');
-                //dump('"'+fileNameWODomain + '"\n');
+		var fileNameWODomain = frame.script.fileName.slice(frame.script.fileName.lastIndexOf('/')+1); 
                 frame.eval("if(!document.currentScript.hasAttribute('__fp_tag'))"+
-                           "document.currentScript.setAttribute('__fp_tag',"+(js_tags++)+")","",1,result); //js_tag is the javascript tag?
-                var location = frame.executionContext.globalObject.getWrappedValue().document.location;
+                           "document.currentScript.setAttribute('__fp_tag',"+(js_tags)+")","",1,result); //js_tag is the javascript tag?
 
 		dump('script_location:'+frame.script.fileName+'\n');               
 
-
-		//var result4={};
-
-		//self.port.emit('instrumentation',{});
- 
-		var result2={};
-        frame.eval("document.currentScript.setAttribute('__fp_execOnPage','"+location+"')","",1,result2);
-        //dump(staticHTMLs[location].toLowerCase());
-                
-        var result3={};
-		frame.eval("document.currentScript.getAttribute('__fp_curScriptDuringCreate')","",1,result3);
-                
-        var unwrapped=result3.value.getWrappedValue();
-                    
-                console.log("test:"+unwrapped+"\n");
-      
-         //       console.log(XPCSafeJSObjectWrapper(unwrapped));   
+		var location = frame.executionContext.globalObject.getWrappedValue().document.location;
+		//var result2={};
+		//frame.eval("document.currentScript.setAttribute('__fp_execOnPage','"+location+"')","",1,result2);
+		//dump(staticHTMLs[location].toLowerCase());
+			
+		      
+		dump('checkpoint0 reached:'+ fileNameWODomain+ '\n');
+         	//console.log(XPCSafeJSObjectWrapper(unwrapped));   
                             
                 //Test for script filename in the static source of the document.  If found, then
                 //document.location is the parent of the current script (encode with -1).  
+		if (staticHTMLs[location]==null)dump("not fetched\n");
                 if(fileNameWODomain != "" && staticHTMLs[location]!=null && 
                    staticHTMLs[location].toLowerCase().indexOf(fileNameWODomain.toLowerCase()) >= 0) {
+
+			dump('first\n');
                      frame.eval("if(!document.currentScript.hasAttribute('__fp_curScriptDuringCreate'))"+
                                 "document.currentScript.setAttribute('__fp_curScriptDuringCreate',-1);","",1,result);
                 }
                 else {//Try to see if the script source code is in the static HTML.  Again, if found,
                       //document.location is the parent of the current script (encode with -1).
+			//dump(staticHTMLs[location]+"\n");
                     if (staticHTMLs[location].toLowerCase().indexOf(
                          frame.script.functionSource.toLowerCase().slice(0,63))) {
+			    dump('third\n');
                             frame.eval("if(!document.currentScript.hasAttribute('__fp_curScriptDuringCreate'))"+
                                       "document.currentScript.setAttribute('__fp_curScriptDuringCreate',-1);","",1,result);
                             }
 
                 }
+
+
+		dump('checkpoint1 reached\n');               
+
+		//many of the attributes below are set in other files
+		var raw_pageID = {};
+		frame.eval("document.currentScript.getAttribute('__fp_pageID')","",1,raw_pageID);
+		var pageID = raw_pageID.value.getWrappedValue();
+
+		dump('checkpoint2 reached\n');               
+
+		var raw_src = {};
+		var disposition; // 0 is inline, 1 is external
+		frame.eval("document.currentScript.getAttribute('src')","",1,raw_src);
+		var src = raw_src.value.getWrappedValue();
+		if (!src || src == "")
+			disposition = 0;
+		else disposition =1;
+		
+		if (disposition)location = src;	//if the script is external, then we fetch the real src
+
+		dump('checkpoint3 reached\n');               
+		
+		var raw_creatorID={};
+		frame.eval("document.currentScript.getAttribute('__fp_curScriptDuringCreate')","",1,raw_creatorID);
+		var creatorID=raw_creatorID.value.getWrappedValue();
+
+		var raw_method={};
+		frame.eval("document.currentScript.getAttribute('__fp_creationMethod')","",1,raw_method);
+		var method=raw_method.value.getWrappedValue();
+
+		var raw_duringCreate={};
+		frame.eval("document.currentScript.getAttribute('__fp_curScriptDuringCreate')","",1,raw_duringCreate);
+		var is_static = (raw_duringCreate.value.getWrappedValue() == -1) ? 1 : 0; // 1 is static, 0 is dynamic
+		
+                
+		//log everything!
+		//id(int), page_id(int), disposition(byte), creator_script_id(int), created_method(TEXT), is_static (byte), location(TEXT)
+		var update = {};
+		update["id"] = js_tags++;
+		update["page_id"] = pageID;
+		update["disposition"] = disposition;
+		update["creator_script_id"] = creatorID;
+		update["created_method"] = method;
+		update["is_static"] = is_static;
+		update["location"] = location;
+
+
+		dump('checkpoint4 reached\n');
+
+		loggingDB.executeSQL(loggingDB.createInsert("javascript",update),true);
+		
             }
         }
     }
