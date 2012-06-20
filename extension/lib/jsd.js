@@ -192,13 +192,13 @@ exports.run = function() {
             frame.eval("document.currentScript.getAttribute('__fp_tag')","",1,raw_scriptTag);
             var scriptTag = raw_scriptTag.value.getWrappedValue();
 
-            
+           /* 
             ////JASON HERE: THIS DOES NOT SEEM TO BE WORKING
             var raw_pageID = {};
             frame.eval("document.currentScript.getAttribute('__fp_pageID')","",1,raw_pageID);
             var pageID = raw_pageID.value.getWrappedValue();
             pageID=-1; /////////HARDCODING THIS FOR NOW
-            
+            */
             //dump('checkpoint2 reached\n');               
             
             var raw_src = {};
@@ -224,9 +224,9 @@ exports.run = function() {
             var snippet = frame.script.functionSource.slice(0,255);
 
             
-            dump('++++++++SRC++++++++\n');
-            dump(frame.script.functionSource.trim());
-            dump('\n--------SRC--------\n');
+            //dump('++++++++SRC++++++++\n');
+            //dump(frame.script.functionSource.trim());
+            //dump('\n--------SRC--------\n');
             
             //use staticHTML of the page to determine if currentScript is installed by the HTML source
             //but can only do this if we already got the staticHTML
@@ -265,7 +265,7 @@ exports.run = function() {
                 //code_snippet(TEXT)
                 var update = {};
                 update["tag"] = scriptTag;
-                update["page_id"] = pageID;
+                //update["page_id"] = pageID;
                 update["document_location"] = loggingDB.escapeString(location);
                 update["disposition"] = loggingDB.escapeString(disposition);
                 update["creator_script_id"] = creatorID;
@@ -288,7 +288,7 @@ exports.run = function() {
                 if (!deferred_scripts.hasOwnProperty(location)) deferred_scripts[location]=[];
                 //gather up the object to be written
                 //once we do the deferred check for creator_script_id, we'll write the stuff to db.
-                deferred_scripts[location].push({script: myscript, tag: scriptTag, page_id:pageID, 
+                deferred_scripts[location].push({script: myscript, tag: scriptTag, //page_id:pageID, 
                                                  document_location:loggingDB.escapeString(location), disposition:loggingDB.escapeString(disposition),
                                                 created_method:loggingDB.escapeString(method), is_static:is_static, 
                                                 script_src:loggingDB.escapeString(ext_script_location), 

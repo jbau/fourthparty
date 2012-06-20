@@ -340,7 +340,8 @@ function makeFunctionProxy(object, functionName, func) {
             //scr.setAttribute('__fp_sTag',  document.location + ":" + (s_tag++));
             scr.setAttribute('__fp_curScriptDuringCreate',  document.currentScript.getAttribute('__fp_tag'));
             scr.setAttribute('__fp_creationMethod',  'document.createElement');
-            scr.setAttribute('__fp_pageID',self.windowID);
+            //scr.setAttribute('__fp_pageID',self.windowID);
+	    //dump("windowID: "+pageManager.pageIDFromWindow(self.windowID)+"\n");
 
             return scr;
             //console.log(object.location);
@@ -349,7 +350,7 @@ function makeFunctionProxy(object, functionName, func) {
         if (functionName == "document.write" && 
             arguments[0].indexOf("script") != -1) {
             var tmp_arg = arguments[0];
-            var replacement = '<script __fp_curScriptDuringCreate="' + document.currentScript.getAttribute('__fp_tag') + '" __fp_creationMethod="document.write" '+' __fp_pageID="'+self.windowID+'"'; 
+            var replacement = '<script __fp_curScriptDuringCreate="' + document.currentScript.getAttribute('__fp_tag') + '" __fp_creationMethod="document.write" '; //+' __fp_pageID="'+self.windowID+'"'; 
             //alert(replacement);
             arguments[0]=tmp_arg.replace(/<script/gi, replacement); 
             //try{throw new Error("StackTrace");}

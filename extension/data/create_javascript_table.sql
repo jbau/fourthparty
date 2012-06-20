@@ -1,7 +1,6 @@
 CREATE TABLE javascript(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
 	tag INTEGER,
-	page_id INTEGER,
     document_location TEXT,
 	disposition TEXT,
 	creator_script_id INTEGER,
