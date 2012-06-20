@@ -340,7 +340,7 @@ function makeFunctionProxy(object, functionName, func) {
             //scr.setAttribute('__fp_sTag',  document.location + ":" + (s_tag++));
             scr.setAttribute('__fp_curScriptDuringCreate',  document.currentScript.getAttribute('__fp_tag'));
             scr.setAttribute('__fp_creationMethod',  'document.createElement');
-            src.setAttribute('__fp_pageID',self.windowID);
+            scr.setAttribute('__fp_pageID',self.windowID);
 
             return scr;
             //console.log(object.location);
