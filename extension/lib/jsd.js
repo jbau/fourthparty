@@ -185,7 +185,7 @@ exports.run = function() {
 		update["creator_script_id"] = creatorID;
 		update["created_method"] = method;
 		update["is_static"] = is_static;
-		update["location"] = location;
+		update["location"] = loggingDB.escapeString(location);
 
 
 		dump('checkpoint4 reached\n');
