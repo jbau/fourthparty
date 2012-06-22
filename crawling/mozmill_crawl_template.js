@@ -10,15 +10,17 @@ A MozMill script for running a web crawl that:
 // On Windows, format path like file://C:/...
 var MOZMILL_TEST_ROOT = "";
 
+/*
 var PrivateBrowsingAPI = require(MOZMILL_TEST_ROOT + "lib/private-browsing");
 var privateBrowsing;
-
+*/
 var PAGE_LOAD_TIMEOUT = 10000;
 var PAGE_WAIT = 10000;
 
+
 var setupModule = function(module) {
 	module.controller = mozmill.getBrowserController();
-	
+/*	
 	// Setup private browsing control
 	privateBrowsing = new PrivateBrowsingAPI.privateBrowsing(module.controller);
 	privateBrowsing.showPrompt = false;
@@ -29,11 +31,12 @@ var setupModule = function(module) {
 		privateBrowsing.start();
 		privateBrowsing.waitForTransitionComplete(true);
 	};
+
+	*/
 }
 // BEGIN_REPEAT
 
 var testURL_NUMBER = function(){
-	cyclePrivateBrowsing();
 	controller.open("URL");
 	controller.waitForPageLoad(PAGE_LOAD_TIMEOUT);
 	controller.sleep(PAGE_WAIT);
