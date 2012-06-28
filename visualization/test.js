@@ -116,11 +116,15 @@ function render(evt) {
     .attr("r", 6)
     .call(force.drag);
     
+    circle.append("title")
+    .text(function(d) { return d.name; });
+    
     
     var text = svg.append("svg:g").selectAll("g")
     .data(force.nodes())
     .enter().append("svg:g");
     
+    /*
     // A copy of the text with a thick white stroke for legibility.
     text.append("svg:text")
     .attr("x", 8)
@@ -132,6 +136,7 @@ function render(evt) {
     .attr("x", 8)
     .attr("y", ".31em")
     .text(function(d) { return d.name; });
+     */
     
     function tick() {
         path.attr("d", function(d) {
