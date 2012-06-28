@@ -11,7 +11,11 @@
   }, 
   "http://static.crowdscience.com/": {
     "http://ping.crowdscience.com/": {
-      "http://www.zerohedge.com/": 2
+      "http://www.pcmag.com/": 1, 
+      "http://www.cracked.com/": 1, 
+      "http://www.zerohedge.com/": 2, 
+      "http://tweetmeme.com/": 1, 
+      "http://www.gsmarena.com/": 1
     }
   }, 
   "http://keywords.fmpub.net/": {
@@ -49,6 +53,9 @@
   }, 
   "http://me-cdn.effectivemeasure.net/": {
     "http://www9.effectivemeasure.net/": {
+      "http://www.mbc.net/": 1, 
+      "http://www.goal.com/": 1, 
+      "http://fatakat.com/": 1, 
       "http://hihi2.com/": 1
     }
   }, 
@@ -64,7 +71,8 @@
   }, 
   "http://platform.linkedin.com/": {
     "http://platform.linkedin.com/": {
-      "http://searchenginewatch.com/": 1
+      "http://searchenginewatch.com/": 1, 
+      "http://www.studiopress.com/": 1
     }
   }, 
   "http://mw2.wsj.net/": {
@@ -90,7 +98,10 @@
   }, 
   "http://www.nbcudigitaladops.com/": {
     "http://www.nbcudigitaladops.com/": {
-      "http://www.eonline.com/": 2
+      "http://www.nhl.com/": 2, 
+      "http://www.cnbc.com/": 2, 
+      "http://www.eonline.com/": 2, 
+      "http://www.fandango.com/": 2
     }
   }, 
   "http://js.web.de/": {
@@ -120,7 +131,8 @@
   }, 
   "http://geo.gorillanation.com/": {
     "http://cdn.triggertag.gorillanation.com/": {
-      "http://www.damnlol.com/": 1
+      "http://www.damnlol.com/": 1, 
+      "http://thechive.com/": 1
     }
   }, 
   "http://dvsend.china.com/": {
@@ -196,7 +208,7 @@
     }
   }, 
   "http://www.voyages-sncf.com/": {
-    "http://A9EB90.r.axf8.net/": {
+    "http://a9eb90.r.axf8.net/": {
       "http://www.voyages-sncf.com/": 1
     }, 
     "http://analytics.voyages-sncf.com/": {
@@ -211,10 +223,40 @@
   }, 
   "http://www.googletagservices.com/": {
     "http://pagead2.googlesyndication.com/": {
-      "http://www.businessweek.com/": 1
+      "http://go.com/": 1, 
+      "http://www.businessweek.com/": 1, 
+      "http://allrecipes.com/": 1, 
+      "http://disney.go.com/": 1
     }, 
     "http://partner.googleadservices.com/": {
-      "http://www.csmonitor.com/": 1
+      "http://www.yelp.com/": 1, 
+      "http://www.cdiscount.com/": 1, 
+      "http://www.gfan.com/": 1, 
+      "http://allrecipes.com/": 1, 
+      "http://tunein.com/": 1, 
+      "http://weheartit.com/": 1, 
+      "http://disney.go.com/": 1, 
+      "http://us.24h.com.vn/": 1, 
+      "http://www.fanpop.com/": 1, 
+      "http://www.urbandictionary.com/": 1, 
+      "http://searchengineland.com/": 1, 
+      "http://www.techtudo.com.br/": 1, 
+      "http://ar.donga.com/": 1, 
+      "http://sakshi.com/": 1, 
+      "http://www.businessweek.com/": 1, 
+      "http://www.worldstarhiphop.com/": 1, 
+      "http://site1.way2sms.com/": 1, 
+      "http://go.com/": 1, 
+      "http://www.woot.com/": 1, 
+      "http://reliancenetconnect.co.in/": 1, 
+      "http://www.brainyquote.com/": 1, 
+      "http://www.csmonitor.com/": 1, 
+      "http://www.kongregate.com/": 1, 
+      "http://mgid.com/": 5, 
+      "http://www.hudong.com/": 1, 
+      "http://songspk.pk/": 1, 
+      "http://slickdeals.net/": 1, 
+      "http://whatismyipaddress.com/": 1
     }
   }, 
   "http://cache.lego.com/": {
@@ -255,7 +297,8 @@
       "http://www.folha.uol.com.br/": 2
     }, 
     "http://ia.nspmotion.com/": {
-      "http://esporte.uol.com.br/": 1
+      "http://esporte.uol.com.br/": 1, 
+      "http://www.folha.uol.com.br/": 1
     }
   }, 
   "http://oascentral.artistdirect.com/": {
@@ -270,6 +313,8 @@
   }, 
   "http://a.tribalfusion.com/": {
     "http://pagead2.googlesyndication.com/": {
+      "http://www.india.com/": 1, 
+      "http://www.akhbarak.net/": 1, 
       "http://sakshi.com/": 3
     }, 
     "http://a.gsmarena.com/": {
@@ -285,13 +330,18 @@
       "http://www.bhaskar.com/": 1
     }, 
     "http://cdnx.tribalfusion.com/": {
-      "http://tinyurl.com/": 113
+      "http://tinyurl.com/": 113, 
+      "http://www.macrumors.com/": 113, 
+      "http://youm7.com/": 1, 
+      "http://www.masrawy.com/": 15, 
+      "http://pastebin.com/": 113
     }, 
     "http://altfarm.mediaplex.com/": {
       "http://sakshi.com/": 1
     }, 
     "http://js.admeld.com/": {
-      "http://weheartit.com/": 1
+      "http://weheartit.com/": 1, 
+      "http://www.topix.com/": 1
     }, 
     "http://cdn.doubleverify.com/": {
       "http://www.masrawy.com/": 1
@@ -307,6 +357,11 @@
       "http://www.nydailynews.com/": 1
     }
   }, 
+  "http://e894b5.r.axf8.net/": {
+    "http://e894b5.t.axf8.net/": {
+      "http://www.overstock.com/": 1
+    }
+  }, 
   "http://adm.shinobi.jp/": {
     "http://adm.shinobi.jp/": {
       "http://www.shinobi.jp/": 1
@@ -314,7 +369,8 @@
   }, 
   "http://www.pconline.com.cn/": {
     "http://ivy.pconline.com.cn/": {
-      "http://www.pcbaby.com.cn/": 1
+      "http://www.pcbaby.com.cn/": 1, 
+      "http://www.pcgames.com.cn/": 1
     }
   }, 
   "http://ad.za.doubleclick.net/": {
@@ -350,7 +406,8 @@
   }, 
   "http://w.sharethis.com/": {
     "http://wd-edge.sharethis.com/": {
-      "http://www.vanguardngr.com/": 1
+      "http://www.vanguardngr.com/": 1, 
+      "http://searchengineland.com/": 1
     }
   }, 
   "http://as.mc.impact-ad.jp/": {
@@ -383,6 +440,7 @@
   }, 
   "http://adserving.cpxinteractive.com/": {
     "http://ib.adnxs.com/": {
+      "http://thechive.com/": 1, 
       "http://images.songspk.pk/": 1
     }
   }, 
@@ -420,7 +478,8 @@
   }, 
   "http://api.recaptcha.net/": {
     "http://www.google.com/": {
-      "http://www.seoquake.com/": 1
+      "http://www.seoquake.com/": 1, 
+      "http://www.wayn.com/": 1
     }
   }, 
   "http://noticias.uol.com.br/": {
@@ -460,6 +519,7 @@
   }, 
   "http://mcc.chinauma.net/": {
     "http://mcc.chinauma.net/": {
+      "http://www.babytree.com/": 1, 
       "http://anjuke.com/": 1
     }, 
     "http://uma.gtags.net/": {
@@ -478,12 +538,14 @@
   }, 
   "http://ganja.gawkerassets.com/": {
     "http://rtax.criteo.com/": {
+      "http://gizmodo.com/": 1, 
       "http://gawker.com/": 1
     }
   }, 
   "http://tag.contextweb.com/": {
     "http://ads.revsci.net/": {
-      "http://www.hindustantimes.com/": 1
+      "http://www.hindustantimes.com/": 1, 
+      "http://www.in.com/": 1
     }, 
     "http://tag.admeld.com/": {
       "http://www.telegraph.co.uk/": 1
@@ -500,7 +562,13 @@
   }, 
   "http://static.bbci.co.uk/": {
     "http://node1.bbcimg.co.uk/": {
+      "http://www.bbc.co.uk/": 2, 
       "http://www.bbc.com/": 2
+    }
+  }, 
+  "http://b48d5f.r.axf8.net/": {
+    "http://b48d5f.t.axf8.net/": {
+      "http://www.asos.com/": 1
     }
   }, 
   "http://cdn.wibiya.com/": {
@@ -523,6 +591,7 @@
   }, 
   "http://creativeby1.unicast.com/": {
     "http://creativeby1.unicast.com/": {
+      "http://www.r7.com/": 74, 
       "http://www.mtv.com/": 93
     }
   }, 
@@ -546,7 +615,8 @@
       "http://www.kinopoisk.ru/": 1
     }, 
     "http://mh6.adriver.ru/": {
-      "http://kp.ru/": 1
+      "http://kp.ru/": 1, 
+      "http://www.kinopoisk.ru/": 1
     }
   }, 
   "http://dbd.linternaute.com/": {
@@ -559,7 +629,11 @@
   }, 
   "https://www.google.com/": {
     "https://www.google.com/": {
-      "http://www.video-lyrics.com/": 1
+      "http://www.gazzetta.it/": 1, 
+      "http://www.123rf.com/": 1, 
+      "http://www.video-lyrics.com/": 1, 
+      "http://www.lowes.com/": 1, 
+      "http://goo.gl/": 1
     }
   }, 
   "https://www.aexp-static.com/": {
@@ -572,9 +646,11 @@
       "http://alphaporno.com/": 1
     }, 
     "http://www.tubedspots.com/": {
+      "http://alphaporno.com/": 2, 
       "http://tubewolf.com/": 2
     }, 
     "http://ads.adxpansion.com/": {
+      "http://alphaporno.com/": 1, 
       "http://tubewolf.com/": 1
     }
   }, 
@@ -649,6 +725,7 @@
       "http://www.thesun.co.uk/": 1
     }, 
     "http://tealium.hs.llnwd.net/": {
+      "http://www.thesun.co.uk/": 7, 
       "http://msn.foxsports.com/": 2
     }
   }, 
@@ -659,7 +736,8 @@
   }, 
   "http://cl.n.btbuckets.com/": {
     "http://cl.n.btbuckets.com/": {
-      "http://www.ole.com.ar/": 1
+      "http://www.ole.com.ar/": 1, 
+      "http://www.clarin.com/": 1
     }
   }, 
   "http://js2.gazzettaobjects.it/": {
@@ -671,13 +749,15 @@
     }
   }, 
   "http://video.newyork.cbslocal.com/": {
-    "http://CBSNY.images.worldnow.com/": {
+    "http://cbsny.images.worldnow.com/": {
       "http://newyork.cbslocal.com/": 1
     }
   }, 
   "http://s0.2mdn.net/": {
     "http://s0.2mdn.net/": {
-      "http://www.damnlol.com/": 2
+      "http://www.abc.es/": 2, 
+      "http://www.damnlol.com/": 2, 
+      "http://www.gazzetta.it/": 2
     }
   }, 
   "http://ads.bloovue.com/": {
@@ -707,7 +787,7 @@
     }
   }, 
   "http://static.classistatic.de/": {
-    "http://9FA4BB.r.axf8.net/": {
+    "http://9fa4bb.r.axf8.net/": {
       "http://www.mobile.de/": 1
     }
   }, 
@@ -717,7 +797,7 @@
     }
   }, 
   "http://static.tinypic.com/": {
-    "http://C8D282.r.axf8.net/": {
+    "http://c8d282.r.axf8.net/": {
       "http://tinypic.com/": 1
     }
   }, 
@@ -758,18 +838,26 @@
     }
   }, 
   "http://ak1.ostkcdn.com/": {
-    "http://E894B5.r.axf8.net/": {
+    "http://e894b5.r.axf8.net/": {
       "http://www.overstock.com/": 1
     }
   }, 
   "http://in-cdn.effectivemeasure.net/": {
     "http://www9.effectivemeasure.net/": {
+      "http://www.bhaskar.com/": 1, 
+      "http://www.hindustantimes.com/": 1, 
+      "http://www.oneindia.in/": 1, 
       "http://live-cricket.hindustantimes.com/": 1
     }
   }, 
   "http://track.adform.net/": {
     "http://track.adform.net/": {
-      "http://ekstrabladet.dk/": 6
+      "http://www.aftonbladet.se/": 5, 
+      "http://annonser.dagbladet.no/": 7, 
+      "http://www.vg.no/": 6, 
+      "http://www.dagbladet.no/": 3, 
+      "http://ekstrabladet.dk/": 6, 
+      "http://www.finn.no/": 3
     }
   }, 
   "http://s.ftcdn.net/": {
@@ -828,7 +916,26 @@
   }, 
   "http://c.betrad.com/": {
     "http://c.betrad.com/": {
-      "http://www.video2mp3.net/": 1
+      "http://www.chicagotribune.com/": 1, 
+      "http://www.azlyrics.com/": 1, 
+      "http://www.thesun.co.uk/": 1, 
+      "http://www.cdiscount.com/": 1, 
+      "http://www.sidereel.com/": 1, 
+      "http://www.bhaskar.com/": 1, 
+      "http://www.manta.com/": 1, 
+      "http://www.tvguide.com/": 1, 
+      "http://www.skysports.com/": 1, 
+      "http://www.ask.com/": 1, 
+      "http://www.goal.com/": 1, 
+      "http://ib.adnxs.com/": 2, 
+      "http://www.mirror.co.uk/": 1, 
+      "http://www.pcmag.com/": 1, 
+      "http://www.rr.com/": 1, 
+      "http://www.transfermarkt.de/": 1, 
+      "http://gawker.com/": 1, 
+      "http://www.video2mp3.net/": 1, 
+      "http://www.urbandictionary.com/": 2, 
+      "http://optimized-by.rubiconproject.com/": 1
     }
   }, 
   "http://www.sport1.de/": {
@@ -849,7 +956,13 @@
   }, 
   "http://ads.rubiconproject.com/": {
     "http://optimized-by.rubiconproject.com/": {
-      "http://www.theage.com.au/": 3
+      "http://drudgereport.com/": 4, 
+      "http://www.smh.com.au/": 3, 
+      "http://www.azlyrics.com/": 1, 
+      "http://www.worldstarhiphop.com/": 2, 
+      "http://www.bhaskar.com/": 1, 
+      "http://www.theage.com.au/": 3, 
+      "http://www.theblaze.com/": 1
     }
   }, 
   "http://ads.foxnews.com/": {
@@ -943,12 +1056,36 @@
       "http://www.kimiss.com/": 1
     }
   }, 
+  "http://3bb4f0.r.axf8.net/": {
+    "http://3bb4f0.t.axf8.net/": {
+      "http://www.sky.com/": 1
+    }
+  }, 
   "http://uac.advertising.com/": {
     "http://r1-ads.ace.advertising.com/": {
-      "http://www.autoblog.com/": 1
+      "http://www.mapquest.com/": 1, 
+      "http://www.fanfiction.net/": 2, 
+      "http://www.miniclip.com/": 1, 
+      "http://www.huffingtonpost.com/": 1, 
+      "http://www.thesun.co.uk/": 1, 
+      "http://www.bigpoint.com/": 2, 
+      "http://www.modelmayhem.com/": 2, 
+      "http://www.autoblog.com/": 1, 
+      "http://www.tmz.com/": 1, 
+      "http://b.photobucket.com/": 2, 
+      "http://ib.adnxs.com/": 2, 
+      "http://ad.yieldmanager.com/": 1, 
+      "http://weheartit.com/": 1, 
+      "http://www.rr.com/": 2, 
+      "http://slickdeals.net/": 1, 
+      "http://www.theblaze.com/": 1, 
+      "http://optimized-by.rubiconproject.com/": 2
     }, 
     "http://sr-r3.ace.advertising.com/": {
-      "http://daily.co.jp/": 2
+      "http://www.asahi.com/": 1, 
+      "http://www.alc.co.jp/": 1, 
+      "http://daily.co.jp/": 2, 
+      "http://www.sanspo.com/": 1
     }
   }, 
   "http://js.itiexue.net/": {
@@ -967,6 +1104,7 @@
       "http://timeanddate.com/": 1
     }, 
     "http://static.sv.us.criteo.net/": {
+      "http://www.haberturk.com/": 1, 
       "http://edge.youtube-mp3.org/": 2
     }
   }, 
@@ -998,7 +1136,8 @@
   }, 
   "http://cdn.insights.gravity.com/": {
     "http://rma-api.gravity.com/": {
-      "http://boston.com/": 1
+      "http://boston.com/": 1, 
+      "http://techcrunch.com/": 1
     }
   }, 
   "http://content.worldnow.com/": {
@@ -1018,18 +1157,22 @@
   }, 
   "http://cdn.demdex.net/": {
     "http://cdn.demdex.net/": {
+      "http://www.livestrong.com/": 1, 
       "http://www.cracked.com/": 1
     }, 
     "http://api.bizographics.com/": {
+      "http://www.livestrong.com/": 1, 
       "http://www.cracked.com/": 1
     }, 
     "http://static.crowdscience.com/": {
       "http://www.cracked.com/": 1
     }, 
     "http://adadvisor.net/": {
+      "http://www.livestrong.com/": 1, 
       "http://www.cracked.com/": 1
     }, 
     "http://pix04.revsci.net/": {
+      "http://www.livestrong.com/": 1, 
       "http://www.cracked.com/": 1
     }
   }, 
@@ -1055,6 +1198,7 @@
   }, 
   "http://ad4.netshelter.net/": {
     "http://ad.doubleclick.net/": {
+      "http://www.xda-developers.com/": 3, 
       "http://www.macrumors.com/": 1
     }
   }, 
@@ -1093,17 +1237,37 @@
       "http://www.weiphone.com/": 2
     }, 
     "http://cpro.baidu.com/": {
+      "http://yichang.anjuke.com/": 1, 
+      "http://zhibo8.cc/": 2, 
+      "http://www.gfan.com/": 1, 
       "http://www.sootoo.com/": 1
     }
   }, 
   "http://apis.google.com/": {
     "https://apis.google.com/": {
-      "http://www.seobook.com/": 1
+      "http://www.seobook.com/": 1, 
+      "http://www.ustream.tv/": 1, 
+      "http://www.lequipe.fr/": 1, 
+      "http://en.fishki.net/": 1, 
+      "http://www.livejournal.com/": 1, 
+      "http://www.constantcontact.com/": 1, 
+      "http://hihi2.com/": 1, 
+      "http://www.n-tv.de/": 1, 
+      "http://www.namecheap.com/": 1, 
+      "http://www.metrolyrics.com/": 1, 
+      "http://newyork.cbslocal.com/": 1, 
+      "http://hardsextube.com/": 1, 
+      "http://www.vanguardngr.com/": 1, 
+      "http://www.porntube.com/": 1, 
+      "http://us.sulekha.com/": 1, 
+      "http://blog.com/": 1, 
+      "http://www.askmen.com/": 1
     }
   }, 
   "http://image.excite.co.jp/": {
     "http://adimp.excite.co.jp/": {
-      "http://www.excite.co.jp/": 3
+      "http://www.excite.co.jp/": 3, 
+      "http://exblog.jp/": 1
     }
   }, 
   "http://ad5.netshelter.net/": {
@@ -1144,7 +1308,16 @@
   }, 
   "http://pix04.revsci.net/": {
     "http://ads.revsci.net/": {
-      "http://www.techradar.com/": 2
+      "http://www.20minutos.es/": 1, 
+      "http://www.slate.com/": 1, 
+      "http://www.dailymail.co.uk/": 1, 
+      "http://www.techradar.com/": 2, 
+      "http://www.askmen.com/": 1, 
+      "http://www.businessweek.com/": 1, 
+      "http://www.buy.com/": 1, 
+      "http://www.mirror.co.uk/": 1, 
+      "http://www.t-online.de/": 1, 
+      "http://www.reuters.com/": 2
     }
   }, 
   "http://www.burstnet.com/": {
@@ -1160,7 +1333,10 @@
   }, 
   "http://ia.nspmotion.com/": {
     "http://akhtm.nspmotion.com/": {
-      "http://www.estadao.com.br/": 219
+      "http://www.r7.com/": 73, 
+      "http://esporte.uol.com.br/": 73, 
+      "http://www.estadao.com.br/": 219, 
+      "http://www.folha.uol.com.br/": 73
     }
   }, 
   "http://www.skysports.com/": {
@@ -1191,12 +1367,39 @@
       "http://www.societe.com/": 1
     }, 
     "http://js.revsci.net/": {
+      "http://www.societe.com/": 1, 
       "http://www.webrankinfo.com/": 1
     }
   }, 
   "http://pubads.g.doubleclick.net/": {
     "http://pagead2.googlesyndication.com/": {
-      "http://www.almasryalyoum.com/": 3
+      "http://www.douban.com/": 1, 
+      "http://www.sidereel.com/": 1, 
+      "http://eenadu.net/": 1, 
+      "http://www.oneindia.in/": 1, 
+      "http://thechive.com/": 1, 
+      "http://jang.com.pk/": 3, 
+      "http://www.npr.org/": 1, 
+      "http://www.askmen.com/": 1, 
+      "http://www.ign.com/": 1, 
+      "http://site1.way2sms.com/": 1, 
+      "http://www.realclearpolitics.com/": 1, 
+      "http://www.lightinthebox.com/": 1, 
+      "http://imageshack.us/": 2, 
+      "http://www.masrawy.com/": 2, 
+      "http://www.hindustantimes.com/": 1, 
+      "http://www.akhbarak.net/": 1, 
+      "http://www.almasryalyoum.com/": 3, 
+      "http://tiu.ru/": 1, 
+      "http://www.r7.com/": 2, 
+      "http://www.dict.cc/": 1, 
+      "http://www.goodreads.com/": 1, 
+      "http://www.glassdoor.com/": 1, 
+      "http://cnbeta.com/": 2, 
+      "http://www.sitepoint.com/": 1, 
+      "http://seekingalpha.com/": 1, 
+      "http://www.tomshardware.com/": 1, 
+      "http://us.sulekha.com/": 1
     }, 
     "http://cdn.undertone.com/": {
       "http://www.realclearpolitics.com/": 1
@@ -1217,6 +1420,8 @@
       "http://www.goodreads.com/": 1
     }, 
     "http://tags.expo9.exponential.com/": {
+      "http://imageshack.us/": 1, 
+      "http://www.akhbarak.net/": 2, 
       "http://eenadu.net/": 1
     }, 
     "http://ads.monetize-me.com/": {
@@ -1235,6 +1440,7 @@
       "http://www.almasryalyoum.com/": 2
     }, 
     "http://bs.serving-sys.com/": {
+      "http://www.r7.com/": 1, 
       "http://www.sitepoint.com/": 1
     }, 
     "http://js.admeld.com/": {
@@ -1249,7 +1455,9 @@
   }, 
   "http://q1digital.checkm8.com/": {
     "http://q1.checkm8.com/": {
-      "http://www.chicagotribune.com/": 1
+      "http://www.chicagotribune.com/": 1, 
+      "http://www.latimes.com/": 1, 
+      "http://www.sfgate.com/": 1
     }
   }, 
   "http://adhitzads.com/": {
@@ -1259,7 +1467,8 @@
   }, 
   "http://ad.e-kolay.net/": {
     "http://ad.e-kolay.net/": {
-      "http://donanimhaber.com/": 34
+      "http://donanimhaber.com/": 34, 
+      "http://www.milliyet.com.tr/": 34
     }
   }, 
   "http://rad.msn.com/": {
@@ -1277,11 +1486,13 @@
       "http://xinmin.cn/": 20
     }, 
     "http://iads.xinmin.cn:6900/": {
-      "http://xinmin.cn/": 1
+      "http://iads.xinmin.cn/": 9, 
+      "http://xinmin.cn/": 2
     }
   }, 
   "http://ads.adjust-net.jp/": {
     "http://ads.adjust-net.jp/": {
+      "http://daily.co.jp/": 2, 
       "http://www.mapion.co.jp/": 1
     }, 
     "https://bs.serving-sys.com/": {
@@ -1323,7 +1534,76 @@
   }, 
   "http://pagead2.googlesyndication.com/": {
     "http://pagead2.googlesyndication.com/": {
-      "http://www.almasryalyoum.com/": 2
+      "http://www.almasryalyoum.com/": 2, 
+      "http://www.metrolyrics.com/": 1, 
+      "http://capetown-westerncape.gumtree.co.za/": 1, 
+      "http://fatakat.com/": 1, 
+      "http://www.thehindu.com/": 3, 
+      "http://www.jeuxvideo.com/": 1, 
+      "http://www.panet.co.il/": 1, 
+      "http://www.gittigidiyor.com/": 1, 
+      "http://www09.eyny.com/": 2, 
+      "http://www.makeuseof.com/": 2, 
+      "http://postimage.org/": 2, 
+      "http://www.time.com/": 1, 
+      "http://hespress.com/": 1, 
+      "http://www.lonelyplanet.com/": 1, 
+      "http://www.detik.com/": 4, 
+      "http://www.chip.de/": 1, 
+      "http://www.masrawy.com/": 1, 
+      "http://www.zeit.de/": 1, 
+      "http://perezhilton.com/": 2, 
+      "http://www.skyscrapercity.com/": 3, 
+      "http://www.gsmarena.com/": 2, 
+      "http://en.kioskea.net/": 1, 
+      "http://kwejk.pl/": 2, 
+      "http://www.azlyrics.com/": 1, 
+      "http://chosun.com/": 1, 
+      "http://jang.com.pk/": 3, 
+      "http://armorgames.com/": 2, 
+      "http://www.analyrics.com/": 2, 
+      "http://www.allgameshome.com/": 2, 
+      "http://www.traidnt.net/": 3, 
+      "http://www.india.com/": 1, 
+      "http://www.news.com.au/": 1, 
+      "http://www.softpedia.com/": 6, 
+      "http://youm7.com/": 3, 
+      "http://www.nytimes.com/": 1, 
+      "http://www.y8.com/": 2, 
+      "http://www.people.com/": 1, 
+      "http://www.01net.com/": 1, 
+      "http://www.techtudo.com.br/": 1, 
+      "http://www.abril.com.br/": 1, 
+      "http://www.gutefrage.net/": 1, 
+      "http://www.answers.com/": 2, 
+      "http://www.moneycontrol.com/": 3, 
+      "http://www.doctissimo.fr/": 1, 
+      "http://www.akhbarak.net/": 1, 
+      "http://filehippo.com/": 3, 
+      "http://www.businessweek.com/": 1, 
+      "http://www.sify.com/": 2, 
+      "http://mangafox.me/": 2, 
+      "http://www.thestar.com/": 2, 
+      "http://www.zerohedge.com/": 4, 
+      "http://www.seitwert.de/": 1, 
+      "http://www.sueddeutsche.de/": 1, 
+      "http://www.bloomberg.com/": 1, 
+      "http://mainichi.jp/": 1, 
+      "http://www.societe.com/": 1, 
+      "http://sakshi.com/": 1, 
+      "http://www.musica.com/": 2, 
+      "http://www2.esmas.com/": 3, 
+      "http://www.wunderground.com/": 3, 
+      "http://www.wetter.com/": 4, 
+      "http://boston.com/": 1, 
+      "http://jiji.com/": 1, 
+      "http://www.accuweather.com/": 1, 
+      "http://cnbeta.com/": 2, 
+      "http://www.nairaland.com/": 2, 
+      "http://www.rtl.de/": 1, 
+      "http://www.pcmag.com/": 1, 
+      "http://www.myplaycity.com/": 2, 
+      "http://alfalfalfa.com/": 3
     }
   }, 
   "http://ad.it.doubleclick.net/": {
@@ -1337,7 +1617,8 @@
       "http://leonardo.it/": 1
     }, 
     "http://bs.serving-sys.com/": {
-      "http://leonardo.it/": 1
+      "http://leonardo.it/": 1, 
+      "http://www.libero.it/": 1
     }
   }, 
   "http://www.bearshare.com/": {
@@ -1350,7 +1631,10 @@
   }, 
   "http://i.i.com.com/": {
     "http://i.i.com.com/": {
-      "http://www.twitch.tv/": 1
+      "http://www.gamefaqs.com/": 1, 
+      "http://www.cbssports.com/": 1, 
+      "http://www.twitch.tv/": 1, 
+      "http://www.cbsnews.com/": 1
     }
   }, 
   "http://tps31.doubleverify.com/": {
@@ -1383,6 +1667,11 @@
       "http://www.gutefrage.net/": 1
     }
   }, 
+  "http://8b3439.r.axf8.net/": {
+    "http://8b3439.t.axf8.net/": {
+      "http://www.intel.com/": 1
+    }
+  }, 
   "http://c-cdn.effectivemeasure.net/": {
     "http://c.effectivemeasure.net/": {
       "http://www.sanook.com/": 1
@@ -1390,7 +1679,9 @@
   }, 
   "http://cdn.flashtalking.com/": {
     "http://cdn.flashtalking.com/": {
-      "http://www.oneindia.in/": 2
+      "http://www.oneindia.in/": 2, 
+      "http://www.chip.de/": 4, 
+      "http://www.bild.de/": 4
     }
   }, 
   "http://www.slate.com/": {
@@ -1409,7 +1700,8 @@
   }, 
   "http://apps.wovendigital.com/": {
     "http://www.google-analytics.com/": {
-      "http://www.videobash.com/": 1
+      "http://www.videobash.com/": 1, 
+      "http://thechive.com/": 1
     }
   }, 
   "http://ads.creative-serving.com/": {
@@ -1419,12 +1711,16 @@
   }, 
   "http://widgets.outbrain.com/": {
     "http://odb.outbrain.com/": {
+      "http://www.nydailynews.com/": 1, 
       "http://tempsreel.nouvelobs.com/": 1
     }
   }, 
   "http://an.yandex.ru/": {
     "http://an.yandex.ru/": {
-      "http://echo.msk.ru/": 2
+      "http://www.gismeteo.ru/": 2, 
+      "http://newsru.com/": 2, 
+      "http://echo.msk.ru/": 2, 
+      "http://pr-cy.ru/": 2
     }
   }, 
   "http://www.webhostingtalk.com/": {
@@ -1444,25 +1740,48 @@
   }, 
   "http://static.fmpub.net/": {
     "http://static.crowdscience.com/": {
-      "http://ads.tweetmeme.com/": 2
+      "http://tweetmeme.com/": 2, 
+      "http://ads.tweetmeme.com/": 2, 
+      "http://www.gsmarena.com/": 2, 
+      "http://imgur.com/": 2, 
+      "http://twitpic.com/": 2
     }, 
     "http://edge.quantserve.com/": {
-      "http://ads.tweetmeme.com/": 2
+      "http://tweetmeme.com/": 1, 
+      "http://ads.tweetmeme.com/": 2, 
+      "http://imgur.com/": 1, 
+      "http://twitpic.com/": 1, 
+      "http://www.makeuseof.com/": 1, 
+      "http://www.gsmarena.com/": 1
     }, 
     "http://static.fmpub.net/": {
       "http://ads.tweetmeme.com/": 2
     }, 
     "http://keywords.fmpub.net/": {
-      "http://ads.tweetmeme.com/": 4
+      "http://ads.tweetmeme.com/": 4, 
+      "http://www.gsmarena.com/": 2
     }, 
     "http://pixel.quantserve.com/": {
-      "http://ads.tweetmeme.com/": 2
+      "http://tweetmeme.com/": 1, 
+      "http://ads.tweetmeme.com/": 2, 
+      "http://imgur.com/": 1, 
+      "http://twitpic.com/": 1, 
+      "http://www.makeuseof.com/": 1, 
+      "http://www.gsmarena.com/": 1
     }, 
     "http://www.lijit.com/": {
-      "http://tweetmeme.com/": 1
+      "http://tweetmeme.com/": 1, 
+      "http://www.gsmarena.com/": 1, 
+      "http://imgur.com/": 1, 
+      "http://twitpic.com/": 1
     }, 
     "http://b.scorecardresearch.com/": {
-      "http://ads.tweetmeme.com/": 4
+      "http://tweetmeme.com/": 2, 
+      "http://ads.tweetmeme.com/": 4, 
+      "http://imgur.com/": 2, 
+      "http://twitpic.com/": 2, 
+      "http://www.makeuseof.com/": 2, 
+      "http://www.gsmarena.com/": 2
     }
   }, 
   "http://stags.peer39.net/": {
@@ -1497,13 +1816,16 @@
   }, 
   "http://scripts.adrcdn.com/": {
     "http://scripts.adrcdn.com/": {
-      "http://www.seloger.com/": 1
+      "http://www.seloger.com/": 1, 
+      "http://www.tf1.fr/": 1
     }, 
     "http://media.adrcdn.com/": {
-      "http://www.seloger.com/": 1
+      "http://www.seloger.com/": 1, 
+      "http://www.tf1.fr/": 1
     }, 
     "http://cntr.adrcntr.com/": {
-      "http://www.seloger.com/": 1
+      "http://www.seloger.com/": 1, 
+      "http://www.tf1.fr/": 1
     }
   }, 
   "http://cdn.iciba.com/": {
@@ -1534,7 +1856,24 @@
       "http://www.reliancenetconnect.co.in/": 1
     }, 
     "http://www.google.com/": {
-      "http://www.gametrailers.com/": 1
+      "http://www.chicagotribune.com/": 1, 
+      "http://www.tigerdirect.com/": 1, 
+      "http://www.thestar.com/": 1, 
+      "http://www.sape.ru/": 1, 
+      "http://adf.ly/": 1, 
+      "http://www.techradar.com/": 2, 
+      "http://www.commbank.com.au/": 1, 
+      "http://gigazine.net/": 1, 
+      "http://www.makeuseof.com/": 1, 
+      "http://www.gametrailers.com/": 1, 
+      "http://www.zendesk.com/": 1, 
+      "http://www.taringa.net/": 1, 
+      "http://www.askmen.com/": 1, 
+      "http://www.bild.de/": 1, 
+      "http://talkfusion.com/": 1, 
+      "http://www.yebhi.com/": 1, 
+      "http://www.google.com/": 1, 
+      "http://www.rackspace.com/": 1
     }
   }, 
   "http://b3.mookie1.com/": {
@@ -1554,7 +1893,10 @@
   }, 
   "http://at.atwola.com/": {
     "http://uac.advertising.com/": {
-      "http://www.autoblog.com/": 1
+      "http://www.autoblog.com/": 1, 
+      "http://www.huffingtonpost.com/": 1, 
+      "http://www.mapquest.com/": 1, 
+      "http://www.rr.com/": 2
     }, 
     "http://cdn.uc.atwola.com/": {
       "http://www.aol.com/": 2
@@ -1612,12 +1954,14 @@
   }, 
   "http://asset1.cbsistatic.com/": {
     "http://i.i.com.com/": {
-      "http://download.cnet.com/": 1
+      "http://download.cnet.com/": 1, 
+      "http://www.cnet.com/": 1
     }
   }, 
   "http://ad.sa.doubleclick.net/": {
     "http://ad.doubleclick.net/": {
-      "http://www.mbc.net/": 1
+      "http://www.mbc.net/": 1, 
+      "http://www.alarabiya.net/": 1
     }, 
     "http://pagead2.googlesyndication.com/": {
       "http://www.mbc.net/": 1
@@ -1674,9 +2018,16 @@
   }, 
   "http://a.collective-media.net/": {
     "http://a.collective-media.net/": {
-      "http://advertising.dilandau.eu/": 1
+      "http://www.chicagotribune.com/": 1, 
+      "http://advertising.dilandau.eu/": 1, 
+      "http://media2.legacy.com/": 1, 
+      "http://boston.com/": 1, 
+      "http://www.sidereel.com/": 2, 
+      "http://www.pogo.com/": 3, 
+      "http://www.softonic.com/": 1
     }, 
     "http://c.betrad.com/": {
+      "http://www.chicagotribune.com/": 1, 
       "http://www.sidereel.com/": 2
     }
   }, 
@@ -1700,6 +2051,7 @@
   }, 
   "http://ads.rcs.it/": {
     "http://ads.rcs.it/": {
+      "http://www.corriere.it/": 2, 
       "http://www.gazzetta.it/": 2
     }
   }, 
@@ -1723,6 +2075,7 @@
   }, 
   "http://im.banner.t-online.de/": {
     "http://a.banner.t-online.de/": {
+      "http://www.t-online.de/": 1, 
       "http://www.kicker.de/": 1
     }, 
     "http://imagesrv.adition.com/": {
@@ -1785,7 +2138,23 @@
   }, 
   "http://s7.addthis.com/": {
     "http://s7.addthis.com/": {
-      "http://www.vid2c.com/": 1
+      "http://www.shinobi.jp/": 1, 
+      "http://www.nasa.gov/": 1, 
+      "http://twitpic.com/": 1, 
+      "http://www.vid2c.com/": 1, 
+      "http://www.wetter.com/": 1, 
+      "http://abcnews.go.com/": 1, 
+      "http://hellporno.com/": 1, 
+      "http://www.ilmeteo.it/": 1, 
+      "http://www.video-lyrics.com/": 1, 
+      "http://www.pogo.com/": 1, 
+      "http://www.hindustantimes.com/": 1, 
+      "http://newyork.cbslocal.com/": 1, 
+      "http://www.topix.com/": 1, 
+      "http://www.medicinenet.com/": 1, 
+      "http://www.y8.com/": 1, 
+      "http://h2porn.com/": 1, 
+      "http://www.mysql.com/": 1
     }
   }, 
   "http://pre.ra.icast.cn/": {
@@ -1795,6 +2164,10 @@
   }, 
   "http://ad4.adfarm1.adition.com/": {
     "http://ad4.adfarm1.adition.com:80/": {
+      "http://www.welt.de/": 1, 
+      "http://www.gutefrage.net/": 1, 
+      "http://www.t-online.de/": 2, 
+      "http://www.kicker.de/": 1, 
       "http://www.sport1.de/": 1
     }
   }, 
@@ -1811,7 +2184,83 @@
   }, 
   "https://apis.google.com/": {
     "https://apis.google.com/": {
-      "http://www.almasryalyoum.com/": 1
+      "http://mashable.com/": 1, 
+      "http://www.zedo.com/": 1, 
+      "http://www.zerohedge.com/": 1, 
+      "http://www.medicinenet.com/": 1, 
+      "http://www.hubspot.com/": 1, 
+      "http://www.xda-developers.com/": 1, 
+      "http://www.glassdoor.com/": 1, 
+      "http://yourlust.com/": 1, 
+      "http://us.playstation.com/": 1, 
+      "http://www.4shared.com/": 1, 
+      "http://www.makeuseof.com/": 1, 
+      "http://postimage.org/": 1, 
+      "http://www.transfermarkt.de/": 1, 
+      "http://www.immobilienscout24.de/": 1, 
+      "http://www.rottentomatoes.com/": 1, 
+      "http://www.iminent.com/": 1, 
+      "http://it.altervista.org/": 1, 
+      "http://jang.com.pk/": 1, 
+      "http://h2porn.com/": 1, 
+      "http://www.lowes.com/": 1, 
+      "http://mp3skull.com/": 1, 
+      "http://www.lanacion.com.ar/": 1, 
+      "http://www.casino.com/": 1, 
+      "http://kwejk.pl/": 1, 
+      "http://demotywatory.pl/": 1, 
+      "http://www.eonline.com/": 1, 
+      "http://tabelog.com/": 1, 
+      "http://daily.co.jp/": 1, 
+      "http://cpanel.net/": 1, 
+      "http://www.analyrics.com/": 1, 
+      "http://isohunt.com/": 1, 
+      "http://www.templatemonster.com/": 1, 
+      "http://www.tokobagus.com/": 1, 
+      "http://www.searchengines.ru/": 1, 
+      "http://www.gazeta.ru/": 1, 
+      "http://www.softpedia.com/": 1, 
+      "http://zeekrewards.com/": 1, 
+      "http://www.damnlol.com/": 1, 
+      "http://www.sabah.com.tr/": 1, 
+      "http://www.independent.co.uk/": 1, 
+      "http://www.sify.com/": 1, 
+      "http://www.000webhost.com/": 1, 
+      "http://searchengineland.com/": 1, 
+      "http://www.abril.com.br/": 1, 
+      "http://www.xe.com/": 1, 
+      "http://www.masrawy.com/": 1, 
+      "http://www.tvguide.com/": 1, 
+      "http://www.mirrorcreator.com/": 1, 
+      "http://www.hindustantimes.com/": 1, 
+      "http://www.akhbarak.net/": 1, 
+      "http://searchenginewatch.com/": 1, 
+      "http://www.almasryalyoum.com/": 1, 
+      "http://kp.ru/": 1, 
+      "http://smartadserver.com/": 1, 
+      "http://www.video-lyrics.com/": 2, 
+      "http://www.usmagazine.com/": 1, 
+      "http://www.extremetube.com/": 1, 
+      "http://www.whitepages.com/": 1, 
+      "http://www.asus.com/": 1, 
+      "http://www.naukri.com/": 1, 
+      "http://www.last.fm/": 1, 
+      "http://www.yebhi.com/": 1, 
+      "http://www.pornerbros.com/": 1, 
+      "http://us.norton.com/": 1, 
+      "http://www.haberturk.com/": 1, 
+      "http://www.infolinks.com/": 1, 
+      "http://www.webmasterworld.com/": 1, 
+      "http://jiji.com/": 1, 
+      "http://www.chacha.com/": 1, 
+      "http://www.accuweather.com/": 1, 
+      "http://www.youporn.com/": 1, 
+      "http://www.ilmeteo.it/": 1, 
+      "http://filepost.com/": 1, 
+      "http://www.torrentreactor.net/": 1, 
+      "http://www.latimes.com/": 1, 
+      "http://www.ancestry.com/": 1, 
+      "http://www.kicker.de/": 1
     }
   }, 
   "http://www.51cto.com/": {
@@ -1826,27 +2275,28 @@
   }, 
   "http://mc.yandex.ru/": {
     "http://mc.yandex.ru/": {
+      "http://www.mynet.com/": 2, 
+      "http://smartresponder.ru/": 1, 
       "http://zaycev.net/": 1
     }
   }, 
   "http://www2l.incredimail.com/": {
     "http://ajax.googleapis.com/": {
-      "http://www.incredimail.com/": 2
+      "http://www.incredimail.com/": 2, 
+      "http://incredibar.com/": 1
     }
   }, 
   "http://image3.pubmatic.com/": {
     "http://ads.pubmatic.com/": {
-      "http://www.ksl.com/": 1
+      "http://www.politico.com/": 1, 
+      "http://www.theweathernetwork.com/": 1, 
+      "http://www.ksl.com/": 1, 
+      "http://www.dailymotion.com/": 1
     }
   }, 
   "http://cbn.tbn.ru/": {
     "http://cbn.tbn.ru/": {
       "http://www.radikal.ru/": 1
-    }
-  }, 
-  "http://A9EB90.r.axf8.net/": {
-    "http://A9EB90.t.axf8.net/": {
-      "http://www.voyages-sncf.com/": 1
     }
   }, 
   "http://ad.harrenmedianetwork.com/": {
@@ -1899,11 +2349,14 @@
       "http://www.sports.ru/": 1
     }, 
     "http://81.177.7.26/": {
+      "http://www.gismeteo.ru/": 1, 
       "http://www.championat.com/": 1
     }
   }, 
   "http://ad-cdn.technoratimedia.com/": {
     "http://uat-net.technoratimedia.com/": {
+      "http://www.makeuseof.com/": 4, 
+      "http://www.worldstarhiphop.com/": 1, 
       "http://technorati.com/": 4
     }
   }, 
@@ -1915,10 +2368,14 @@
       "http://www.accuweather.com/": 1
     }, 
     "http://edge.quantserve.com/": {
-      "http://www.realclearpolitics.com/": 1
+      "http://www.tvguide.com/": 1, 
+      "http://www.realclearpolitics.com/": 1, 
+      "http://www.accuweather.com/": 1
     }, 
     "http://b.voicefive.com/": {
-      "http://www.realclearpolitics.com/": 1
+      "http://www.tvguide.com/": 1, 
+      "http://www.realclearpolitics.com/": 1, 
+      "http://www.accuweather.com/": 1
     }, 
     "http://c.betrad.com/": {
       "http://www.tvguide.com/": 1
@@ -1943,7 +2400,8 @@
       "http://www.kuxun.cn/": 2
     }, 
     "http://ads.rubiconproject.com/": {
-      "http://www.theage.com.au/": 3
+      "http://www.theage.com.au/": 3, 
+      "http://www.smh.com.au/": 3
     }
   }, 
   "https://platform.twitter.com/": {
@@ -1977,7 +2435,8 @@
   }, 
   "http://fnacmagasin.solution.weborama.fr/": {
     "http://elstatic.weborama.fr/": {
-      "http://www.lefigaro.fr/": 2
+      "http://www.lefigaro.fr/": 2, 
+      "http://www.lemonde.fr/": 2
     }
   }, 
   "http://optimus.ipinyou.com/": {
@@ -2014,7 +2473,8 @@
   }, 
   "http://rmserve.revenuemantra.com/": {
     "http://tag.contextweb.com/": {
-      "http://www.hindustantimes.com/": 1
+      "http://www.hindustantimes.com/": 1, 
+      "http://www.in.com/": 1
     }
   }, 
   "http://j.admagnet.net/": {
@@ -2061,7 +2521,8 @@
   }, 
   "http://d2.zedo.com/": {
     "http://d7.zedo.com/": {
-      "http://www.vb.eqla3.com/": 1
+      "http://www.vb.eqla3.com/": 1, 
+      "http://www.ndtv.com/": 5
     }
   }, 
   "http://uat-net.technoratimedia.com/": {
@@ -2069,12 +2530,15 @@
       "http://technorati.com/": 1
     }, 
     "http://tmx.technoratimedia.com/": {
+      "http://www.makeuseof.com/": 3, 
+      "http://www.worldstarhiphop.com/": 1, 
       "http://technorati.com/": 4
     }, 
     "http://cdn.krxd.net/": {
       "http://technorati.com/": 1
     }, 
     "http://b.scorecardresearch.com/": {
+      "http://www.makeuseof.com/": 4, 
       "http://technorati.com/": 4
     }
   }, 
@@ -2117,7 +2581,9 @@
   }, 
   "http://view.atdmt.com/": {
     "http://amch.questionmarket.com/": {
-      "http://www.csmonitor.com/": 1
+      "http://www.csmonitor.com/": 1, 
+      "http://www.askmen.com/": 1, 
+      "http://www.nypost.com/": 1
     }
   }, 
   "http://ads.crakmedia.com/": {
@@ -2150,7 +2616,8 @@
   }, 
   "http://c2.zedo.com/": {
     "http://c7.zedo.com/": {
-      "http://www.hindustantimes.com/": 1
+      "http://www.hindustantimes.com/": 1, 
+      "http://songspk.pk/": 2
     }
   }, 
   "http://www.autotraderstatic.com/": {
@@ -2194,7 +2661,9 @@
   }, 
   "http://ssp.advg.jp/": {
     "http://ssp.advg.jp/": {
-      "http://www.oricon.co.jp/": 1
+      "http://www.oricon.co.jp/": 1, 
+      "http://mainichi.jp/": 2, 
+      "http://www.sanspo.com/": 1
     }
   }, 
   "http://s1.gismeteo.ru/": {
@@ -2260,28 +2729,47 @@
       "http://www.oneindia.in/": 1
     }, 
     "http://media.fastclick.net/": {
+      "http://www.azlyrics.com/": 2, 
+      "http://www.thesun.co.uk/": 1, 
+      "http://www.skysports.com/": 2, 
       "http://www.mirror.co.uk/": 2
     }, 
     "http://adserver.adtechus.com/": {
       "http://www.theage.com.au/": 1
     }, 
     "http://tags.expo9.exponential.com/": {
+      "http://drudgereport.com/": 3, 
       "http://optimized-by.rubiconproject.com/": 1
     }, 
     "http://tap-cdn.rubiconproject.com/": {
-      "http://www.theage.com.au/": 3
+      "http://reliancenetconnect.co.in/": 1, 
+      "http://www.azlyrics.com/": 4, 
+      "http://www.mirror.co.uk/": 2, 
+      "http://www.worldstarhiphop.com/": 2, 
+      "http://www.skysports.com/": 2, 
+      "http://www.news.com.au/": 3, 
+      "http://www.autotrader.co.uk/": 1, 
+      "http://www.theage.com.au/": 3, 
+      "http://www.oneindia.in/": 2
     }, 
     "http://ads.rubiconproject.com/": {
       "http://drudgereport.com/": 1
     }, 
     "http://ib.adnxs.com/": {
+      "http://www.azlyrics.com/": 1, 
+      "http://www.autotrader.co.uk/": 1, 
+      "http://www.bhaskar.com/": 1, 
       "http://www.theage.com.au/": 1
     }, 
     "http://tag.contextweb.com/": {
-      "http://www.azlyrics.com/": 1
+      "http://reliancenetconnect.co.in/": 1, 
+      "http://www.azlyrics.com/": 1, 
+      "http://www.worldstarhiphop.com/": 3
     }, 
     "http://uac.advertising.com/": {
-      "http://www.theblaze.com/": 1
+      "http://www.thesun.co.uk/": 1, 
+      "http://www.theblaze.com/": 1, 
+      "http://optimized-by.rubiconproject.com/": 2
     }
   }, 
   "http://tb.ph.affinity.com/": {
@@ -2315,7 +2803,9 @@
   }, 
   "http://tap-cdn.rubiconproject.com/": {
     "http://anvil.rubiconproject.com/": {
-      "http://www.cafemom.com/": 3
+      "http://drudgereport.com/": 1, 
+      "http://www.cafemom.com/": 3, 
+      "http://photobucket.com/": 1
     }
   }, 
   "http://es.optimost.com/": {
@@ -2366,7 +2856,7 @@
     }
   }, 
   "http://www.walgreens.com/": {
-    "http://244D80.r.axf8.net/": {
+    "http://244d80.r.axf8.net/": {
       "http://www.walgreens.com/": 1
     }
   }, 
@@ -2385,7 +2875,14 @@
   }, 
   "http://altfarm.mediaplex.com/": {
     "http://img-cdn.mediaplex.com/": {
-      "http://demotywatory.pl/": 1
+      "http://www.uol.com.br/": 1, 
+      "http://demotywatory.pl/": 1, 
+      "http://www.techradar.com/": 1, 
+      "http://sakshi.com/": 1, 
+      "http://www.news24.com/": 2, 
+      "http://www.pcmag.com/": 1, 
+      "http://www.autotrader.co.uk/": 1, 
+      "http://optimized-by.rubiconproject.com/": 1
     }, 
     "http://b.voicefive.com/": {
       "http://www.cdiscount.com/": 1
@@ -2401,6 +2898,7 @@
   }, 
   "http://ad.de.doubleclick.net/": {
     "http://pagead2.googlesyndication.com/": {
+      "http://www.wetter.com/": 1, 
       "http://www.zeit.de/": 1
     }, 
     "http://s214.meetrics.net/": {
@@ -2413,6 +2911,7 @@
       "http://www.sueddeutsche.de/": 1
     }, 
     "http://s0.2mdn.net/": {
+      "http://www.wetter.com/": 1, 
       "http://www.zeit.de/": 2
     }, 
     "http://s289.meetrics.net/": {
@@ -2473,7 +2972,8 @@
   }, 
   "http://ajax.googleapis.com/": {
     "http://ajax.googleapis.com/": {
-      "http://kp.ru/": 6
+      "http://kp.ru/": 6, 
+      "http://www.last.fm/": 6
     }
   }, 
   "http://www.miniclip.com/": {
@@ -2511,10 +3011,12 @@
   }, 
   "http://www.esmas.com/": {
     "http://www.google-analytics.com/": {
-      "http://www2.esmas.com/": 1
+      "http://mxm.televisadeportes.esmas.com/": 1, 
+      "http://www2.esmas.com/": 2
     }, 
     "http://service.collarity.com/": {
-      "http://www2.esmas.com/": 1
+      "http://mxm.televisadeportes.esmas.com/": 1, 
+      "http://www2.esmas.com/": 2
     }, 
     "http://b.scorecardresearch.com/": {
       "http://www2.esmas.com/": 1
@@ -2522,7 +3024,9 @@
   }, 
   "http://static.csbew.com/": {
     "http://afp.csbew.com/": {
-      "http://www.lady8844.com/": 1
+      "http://www.lady8844.com/": 1, 
+      "http://tom.com/": 4, 
+      "http://sc.tom.com/": 1
     }, 
     "http://static.acs86.com/": {
       "http://ynet.com/": 1
@@ -2559,7 +3063,9 @@
   }, 
   "http://js.bizographics.com/": {
     "http://js.bizographics.com/": {
-      "http://www.zerohedge.com/": 1
+      "http://www.sfgate.com/": 1, 
+      "http://www.zerohedge.com/": 1, 
+      "http://www.manta.com/": 1
     }
   }, 
   "http://e01.taggyad.jp/": {
@@ -2592,13 +3098,17 @@
   }, 
   "http://ads.revsci.net/": {
     "http://ads.revsci.net/": {
-      "http://www.hindustantimes.com/": 1
+      "http://www.hindustantimes.com/": 1, 
+      "http://www.in.com/": 1, 
+      "http://www.smh.com.au/": 3
     }, 
     "http://ib.adnxs.com/": {
       "http://www.smh.com.au/": 1
     }, 
     "http://adnxs.revsci.net/": {
-      "http://www.hindustantimes.com/": 1
+      "http://www.hindustantimes.com/": 1, 
+      "http://www.in.com/": 1, 
+      "http://www.smh.com.au/": 2
     }
   }, 
   "http://www.netbina.net/": {
@@ -2661,6 +3171,8 @@
   }, 
   "http://fw.adsafeprotected.com/": {
     "http://fw.adsafeprotected.com/": {
+      "http://go.com/": 1, 
+      "http://www.nytimes.com/": 1, 
       "http://www.bbc.com/": 2
     }
   }, 
@@ -2678,6 +3190,17 @@
     }, 
     "http://s0.2mdn.net/": {
       "http://www.abc.es/": 6
+    }
+  }, 
+  "http://cbsny.images.worldnow.com/": {
+    "http://content.worldnow.com/": {
+      "http://newyork.cbslocal.com/": 5
+    }, 
+    "http://cbsny.images.worldnow.com/": {
+      "http://newyork.cbslocal.com/": 1
+    }, 
+    "http://s7.addthis.com/": {
+      "http://newyork.cbslocal.com/": 1
     }
   }, 
   "http://miniplayer.mondominishows.com/": {
@@ -2704,7 +3227,9 @@
   }, 
   "http://adnxs.revsci.net/": {
     "http://ib.adnxs.com/": {
-      "http://www.hindustantimes.com/": 1
+      "http://www.hindustantimes.com/": 1, 
+      "http://www.in.com/": 1, 
+      "http://www.smh.com.au/": 2
     }
   }, 
   "http://news.tagtoo.co/": {
@@ -2737,12 +3262,14 @@
   }, 
   "http://n.admagnet.net/": {
     "http://c2.amimg.net/": {
+      "http://indianrail.gov.in/": 1, 
       "http://sakshi.com/": 1
     }
   }, 
   "http://asset3.cbsistatic.com/": {
     "http://i.i.com.com/": {
-      "http://download.cnet.com/": 1
+      "http://download.cnet.com/": 1, 
+      "http://www.cnet.com/": 1
     }
   }, 
   "http://www.samsung.com/": {
@@ -2788,13 +3315,17 @@
   }, 
   "http://motifcdn2.doubleclick.net/": {
     "http://cdn.doubleverify.com/": {
-      "http://en.kioskea.net/": 1
+      "http://en.kioskea.net/": 1, 
+      "http://ads.cnn.com/": 1, 
+      "http://tagmanezt.terra.com/": 8
     }, 
     "http://b.voicefive.com/": {
-      "http://ads.cnn.com/": 1
+      "http://ads.cnn.com/": 1, 
+      "http://www.ask.com/": 1
     }, 
     "http://b.scorecardresearch.com/": {
-      "http://en.kioskea.net/": 1
+      "http://en.kioskea.net/": 1, 
+      "http://tagmanezt.terra.com/": 8
     }, 
     "http://c.betrad.com/": {
       "http://www.ask.com/": 1
@@ -2846,6 +3377,7 @@
       "http://drudgereport.com/": 1
     }, 
     "http://aka-cdn-ns.adtechus.com/": {
+      "http://drudgereport.com/": 1, 
       "http://www.theweathernetwork.com/": 1
     }
   }, 
@@ -2901,7 +3433,8 @@
   }, 
   "http://media.newjobs.com/": {
     "http://media.monster.com/": {
-      "http://promotion.monster.com/": 1
+      "http://promotion.monster.com/": 1, 
+      "http://www.monster.com/": 1
     }, 
     "http://cookie.monster.com/": {
       "http://www.monster.com/": 1
@@ -2922,18 +3455,11 @@
       "http://www.lefigaro.fr/": 2
     }, 
     "http://fnacmagasin.solution.weborama.fr/": {
-      "http://www.lefigaro.fr/": 1
+      "http://www.lefigaro.fr/": 1, 
+      "http://www.lemonde.fr/": 1
     }, 
     "http://bs.serving-sys.com/": {
       "http://www.liberation.fr/": 2
-    }
-  }, 
-  "http://ad.Doubleclick.net/": {
-    "http://s0.2mdn.net/": {
-      "http://espn.go.com/": 2
-    }, 
-    "http://bs.serving-sys.com/": {
-      "http://espn.go.com/": 1
     }
   }, 
   "http://s.npr.org/": {
@@ -2951,6 +3477,10 @@
   }, 
   "http://adspaces.ero-advertising.com/": {
     "http://adspaces.ero-advertising.com/": {
+      "http://www.bravotube.net/": 1, 
+      "http://adv.h2porn.com/": 1, 
+      "http://hellporno.com/": 2, 
+      "http://ads.xxxbunker.com/": 3, 
       "http://www.yourlust.com/": 1
     }
   }, 
@@ -2976,6 +3506,8 @@
   }, 
   "http://cdn.extensions.buzznet.com/": {
     "http://b.scorecardresearch.com/": {
+      "http://egotastic.com/": 1, 
+      "http://www.fanpop.com/": 1, 
       "http://www.celebuzz.com/": 1
     }
   }, 
@@ -2991,12 +3523,15 @@
   }, 
   "http://a.tfag.de/": {
     "http://req.connect.wunderloop.net/": {
+      "http://www.gutefrage.net/": 1, 
       "http://www.chip.de/": 1
     }, 
     "http://js.revsci.net/": {
+      "http://www.gutefrage.net/": 1, 
       "http://www.chip.de/": 1
     }, 
     "http://tofo.nuggad.net/": {
+      "http://www.gutefrage.net/": 1, 
       "http://www.chip.de/": 1
     }
   }, 
@@ -3012,7 +3547,9 @@
   }, 
   "http://servedby.adxpose.com/": {
     "http://event.adxpose.com/": {
-      "http://www.autotrader.co.uk/": 1
+      "http://www.makeuseof.com/": 1, 
+      "http://www.autotrader.co.uk/": 1, 
+      "http://www.oneindia.in/": 1
     }
   }, 
   "http://adx.chip.de/": {
@@ -3042,7 +3579,13 @@
   }, 
   "http://ad.xtendmedia.com/": {
     "http://ad.xtendmedia.com/": {
-      "http://www.worldstarhiphop.com/": 1
+      "http://www.worldstarhiphop.com/": 1, 
+      "http://watchseries.eu/": 1
+    }
+  }, 
+  "http://a9eb90.r.axf8.net/": {
+    "http://a9eb90.t.axf8.net/": {
+      "http://www.voyages-sncf.com/": 1
     }
   }, 
   "http://www8.glam.com/": {
@@ -3061,6 +3604,11 @@
       "http://www.ndtv.com/": 3
     }
   }, 
+  "http://c8d282.r.axf8.net/": {
+    "http://c8d282.t.axf8.net/": {
+      "http://tinypic.com/": 1
+    }
+  }, 
   "http://ad.reklamport.com/": {
     "http://ad.reklamport.com/": {
       "http://www.sabah.com.tr/": 1
@@ -3076,6 +3624,7 @@
   }, 
   "http://a.visualrevenue.com/": {
     "http://p.visualrevenue.com/": {
+      "http://www.forbes.com/": 1, 
       "http://www.nydailynews.com/": 1
     }
   }, 
@@ -3106,6 +3655,7 @@
   }, 
   "http://adfarm.mediaplex.com/": {
     "http://img-cdn.mediaplex.com/": {
+      "http://us.sulekha.com/": 1, 
       "http://www.kicktipp.de/": 2
     }
   }, 
@@ -3178,11 +3728,6 @@
       "http://www.irs.gov/": 1
     }
   }, 
-  "http://B48D5F.r.axf8.net/": {
-    "http://B48D5F.t.axf8.net/": {
-      "http://www.asos.com/": 1
-    }
-  }, 
   "https://chaseonline.chase.com/": {
     "https://chaseonline.chase.com/": {
       "https://www.chase.com/": 1
@@ -3199,7 +3744,7 @@
     }
   }, 
   "http://shop.lenovo.com/": {
-    "http://D5EF7D.r.axf8.net/": {
+    "http://d5ef7d.r.axf8.net/": {
       "http://lenovo.com/": 1
     }
   }, 
@@ -3240,7 +3785,9 @@
   }, 
   "http://rtbcdn.doubleverify.com/": {
     "http://rtb0.doubleverify.com/": {
-      "http://www.akhbarak.net/": 1
+      "http://www.traidnt.net/": 1, 
+      "http://www.akhbarak.net/": 1, 
+      "http://www.ndtv.com/": 1
     }
   }, 
   "http://assets2.lefigaro.fr/": {
@@ -3253,7 +3800,11 @@
       "http://www.moneycontrol.com/": 96
     }, 
     "http://c7.zedo.com/": {
-      "http://www.zdnet.com/": 2
+      "http://www.zdnet.com/": 2, 
+      "http://www.moneycontrol.com/": 6, 
+      "http://www.zedo.com/": 1, 
+      "http://www.bhaskar.com/": 3, 
+      "http://www.in.com/": 2
     }
   }, 
   "http://www.rackspace.com/": {
@@ -3282,13 +3833,15 @@
   }, 
   "http://bouyguestelecom.solution.weborama.fr/": {
     "http://scripts.adrcdn.com/": {
-      "http://www.seloger.com/": 2
+      "http://www.seloger.com/": 2, 
+      "http://www.tf1.fr/": 2
     }, 
     "http://elstatic.weborama.fr/": {
       "http://www.tf1.fr/": 2
     }, 
     "http://js.alenty.com/": {
-      "http://www.seloger.com/": 1
+      "http://www.seloger.com/": 1, 
+      "http://www.tf1.fr/": 2
     }
   }, 
   "http://ad.turn.com/": {
@@ -3360,16 +3913,30 @@
       "http://www.telegraph.co.uk/": 2
     }, 
     "http://s0.2mdn.net/": {
-      "http://annonser.dagbladet.no/": 1
+      "http://www.20minutes.fr/": 1, 
+      "http://www.gutefrage.net/": 1, 
+      "http://www.rtl.de/": 1, 
+      "http://ansa.it/": 1, 
+      "http://annonser.dagbladet.no/": 1, 
+      "http://www.gazzetta.it/": 2, 
+      "http://www.t-online.de/": 2, 
+      "http://www.lexpress.fr/": 1
     }
   }, 
   "http://maps.google.com/": {
     "http://maps.gstatic.com/": {
-      "http://www.ip-adress.com/": 1
+      "http://www.tradedoubler.com/": 1, 
+      "http://www.meetup.com/": 1, 
+      "http://www.ip-adress.com/": 1, 
+      "http://twitpic.com/": 1
     }
   }, 
   "http://a.alimama.cn/": {
     "http://a.alimama.cn/": {
+      "http://ifeng.com/": 1, 
+      "http://www.tiexue.net/": 1, 
+      "http://img1.126.net/": 1, 
+      "http://china.com/": 1, 
       "http://yyets.com/": 1
     }
   }, 
@@ -3386,20 +3953,10 @@
       "http://www.kinopoisk.ru/": 1
     }
   }, 
-  "http://CBSNY.images.worldnow.com/": {
-    "http://content.worldnow.com/": {
-      "http://newyork.cbslocal.com/": 5
-    }, 
-    "http://CBSNY.images.worldnow.com/": {
-      "http://newyork.cbslocal.com/": 1
-    }, 
-    "http://s7.addthis.com/": {
-      "http://newyork.cbslocal.com/": 1
-    }
-  }, 
   "http://e.yieldmanager.net/": {
     "http://open.ad.yieldmanager.net/": {
-      "http://www.sfgate.com/": 1
+      "http://www.sfgate.com/": 1, 
+      "http://www.nydailynews.com/": 1
     }
   }, 
   "http://orf.oewabox.at/": {
@@ -3460,19 +4017,61 @@
   }, 
   "http://js.revsci.net/": {
     "http://r.nexac.com/": {
+      "http://www.marketwatch.com/": 1, 
       "http://www.20minutos.es/": 1
     }, 
     "http://ads.revsci.net/": {
-      "http://www.tiscali.it/": 1
+      "http://www.slate.com/": 1, 
+      "http://www.marca.com/": 1, 
+      "http://www.telegraaf.nl/": 1, 
+      "http://ansa.it/": 1, 
+      "http://www.ilmeteo.it/": 1, 
+      "http://www.celebuzz.com/": 1, 
+      "http://www.tiscali.it/": 1, 
+      "http://www.news.com.au/": 1, 
+      "http://www.fanpop.com/": 1
     }, 
     "http://adadvisor.net/": {
+      "http://www.weather.com/": 1, 
       "http://www.askmen.com/": 1
     }, 
     "http://pix04.revsci.net/": {
-      "http://www.faz.net/": 1
+      "http://www.asahi.com/": 1, 
+      "http://lockerz.com/": 1, 
+      "http://www.societe.com/": 1, 
+      "http://www.weather.com/": 1, 
+      "http://www.lonelyplanet.com/": 1, 
+      "http://www.askmen.com/": 1, 
+      "http://www.chip.de/": 1, 
+      "http://www.reuters.com/": 1, 
+      "http://www.tiscali.it/": 1, 
+      "http://ansa.it/": 1, 
+      "http://www.ilmeteo.it/": 1, 
+      "http://www.dailymail.co.uk/": 1, 
+      "http://www.fanpop.com/": 2, 
+      "http://www.20minutos.es/": 1, 
+      "http://www.webrankinfo.com/": 1, 
+      "http://www.gutefrage.net/": 1, 
+      "http://www.slate.com/": 2, 
+      "http://www.people.com/": 1, 
+      "http://www.focus.de/": 1, 
+      "http://www.businessweek.com/": 2, 
+      "http://www.buy.com/": 1, 
+      "http://www.faz.net/": 1, 
+      "http://www.whitepages.com/": 1, 
+      "http://www.t-online.de/": 2, 
+      "http://www.marca.com/": 1, 
+      "http://www.rtl.de/": 1, 
+      "http://www.wetter.com/": 1, 
+      "http://cdn.adimages.go.com/": 2, 
+      "http://www.mirror.co.uk/": 1, 
+      "http://www.celebuzz.com/": 1
     }, 
     "http://das.uk.experian.com/": {
-      "http://www.techradar.com/": 1
+      "http://www.dailymail.co.uk/": 1, 
+      "http://www.mirror.co.uk/": 1, 
+      "http://www.techradar.com/": 1, 
+      "http://www.telegraph.co.uk/": 1
     }
   }, 
   "http://r.suc.itc.cn/": {
@@ -3487,6 +4086,12 @@
   }, 
   "http://d1.tentaculos.net/": {
     "http://edge.quantserve.com/": {
+      "http://www.abc.es/": 2, 
+      "http://www.cracked.com/": 1, 
+      "http://elpais.com/": 1, 
+      "http://www.fixya.com/": 1, 
+      "http://www.rottentomatoes.com/": 1, 
+      "http://slickdeals.net/": 3, 
       "http://www.theage.com.au/": 1
     }, 
     "http://api.dimestore.com/": {
@@ -3494,7 +4099,7 @@
     }
   }, 
   "http://www.symantec.com/": {
-    "http://E52880.r.axf8.net/": {
+    "http://e52880.r.axf8.net/": {
       "http://www.symantec.com/": 1
     }
   }, 
@@ -3519,7 +4124,8 @@
       "http://www.goal.com/": 1
     }, 
     "http://tags.expo9.exponential.com/": {
-      "http://www.india.com/": 1
+      "http://www.india.com/": 1, 
+      "http://www.masrawy.com/": 2
     }, 
     "http://as.jivox.com/": {
       "http://www.oneindia.in/": 2
@@ -3593,15 +4199,19 @@
   }, 
   "http://ad.batanga.com/": {
     "http://edge.quantserve.com/": {
+      "http://www.softonic.com/": 1, 
       "http://advertising.dilandau.eu/": 1
     }, 
     "http://b.scorecardresearch.com/": {
+      "http://www.softonic.com/": 1, 
       "http://advertising.dilandau.eu/": 1
     }, 
     "http://a.collective-media.net/": {
+      "http://www.softonic.com/": 1, 
       "http://advertising.dilandau.eu/": 1
     }, 
     "http://ad.batanga.com/": {
+      "http://www.softonic.com/": 1, 
       "http://advertising.dilandau.eu/": 1
     }
   }, 
@@ -3627,7 +4237,10 @@
   }, 
   "http://content.adriver.ru/": {
     "http://content.adriver.ru/": {
-      "http://kp.ru/": 3
+      "http://kp.ru/": 3, 
+      "http://www.gismeteo.ru/": 7, 
+      "http://www.kinopoisk.ru/": 3, 
+      "http://ria.ru/": 7
     }, 
     "http://ad.adriver.ru/": {
       "http://www.gismeteo.ru/": 2
@@ -3640,6 +4253,7 @@
   }, 
   "http://node1.bbcimg.co.uk/": {
     "http://node1.bbcimg.co.uk/": {
+      "http://www.bbc.co.uk/": 2, 
       "http://www.bbc.com/": 2
     }
   }, 
@@ -3685,6 +4299,7 @@
   }, 
   "http://ajax.cloudflare.com/": {
     "http://cdnjs.cloudflare.com/": {
+      "http://youm7.com/": 4, 
       "http://www1.youm7.com/": 12
     }
   }, 
@@ -3737,17 +4352,15 @@
       "http://tom.com/": 1
     }, 
     "http://static.csbew.com/": {
-      "http://ynet.com/": 2
+      "http://www.lady8844.com/": 1, 
+      "http://tom.com/": 5, 
+      "http://ynet.com/": 2, 
+      "http://sc.tom.com/": 1
     }
   }, 
   "http://nnn.novoteka.ru/": {
     "http://nnn.novoteka.ru/": {
       "http://www.directadvert.ru/": 1
-    }
-  }, 
-  "http://3BB4F0.r.axf8.net/": {
-    "http://3BB4F0.t.axf8.net/": {
-      "http://www.sky.com/": 1
     }
   }, 
   "http://creativeby2.unicast.com/": {
@@ -3773,7 +4386,9 @@
   }, 
   "http://afe.specificclick.net/": {
     "http://ad.doubleclick.net/": {
-      "http://sitemeter.com/": 2
+      "http://www.ask.com/": 2, 
+      "http://sitemeter.com/": 2, 
+      "http://ad.yieldmanager.com/": 2
     }, 
     "http://altfarm.mediaplex.com/": {
       "http://www.techradar.com/": 1
@@ -3782,7 +4397,11 @@
       "http://sitemeter.com/": 1
     }, 
     "http://b.scorecardresearch.com/": {
-      "http://www.techradar.com/": 2
+      "http://www.techradar.com/": 2, 
+      "http://www.ask.com/": 1, 
+      "http://www.ksl.com/": 1, 
+      "http://sitemeter.com/": 2, 
+      "http://ad.yieldmanager.com/": 1
     }
   }, 
   "http://ad1.adfarm1.adition.com/": {
@@ -3819,6 +4438,7 @@
   }, 
   "http://c5.zedo.com/": {
     "http://c7.zedo.com/": {
+      "http://www.chicagotribune.com/": 1, 
       "http://www.theblaze.com/": 1
     }
   }, 
@@ -3868,11 +4488,6 @@
       "http://www.alarabiya.net/": 6
     }
   }, 
-  "http://C8D282.r.axf8.net/": {
-    "http://C8D282.t.axf8.net/": {
-      "http://tinypic.com/": 1
-    }
-  }, 
   "http://pfa.levexis.com/": {
     "http://segment-pixel.invitemedia.com/": {
       "http://www.easyjet.com/": 1
@@ -3880,18 +4495,22 @@
   }, 
   "http://service.collarity.com/": {
     "http://ajax.googleapis.com/": {
-      "http://www2.esmas.com/": 1
+      "http://mxm.televisadeportes.esmas.com/": 1, 
+      "http://www2.esmas.com/": 2
     }, 
     "http://cws.cachefly.net/": {
-      "http://www2.esmas.com/": 1
+      "http://mxm.televisadeportes.esmas.com/": 1, 
+      "http://www2.esmas.com/": 2
     }
   }, 
   "http://ads.ad4game.com/": {
     "http://www.google-analytics.com/": {
-      "http://armorgames.com/": 1
+      "http://armorgames.com/": 1, 
+      "http://isohunt.com/": 1
     }, 
     "http://edge.quantserve.com/": {
-      "http://armorgames.com/": 1
+      "http://armorgames.com/": 1, 
+      "http://isohunt.com/": 1
     }
   }, 
   "http://www.nikkeibp.co.jp/": {
@@ -3944,7 +4563,8 @@
   }, 
   "http://cdn.clicktale.net/": {
     "http://cdn.clicktale.net/": {
-      "http://www.metrolyrics.com/": 1
+      "http://www.metrolyrics.com/": 1, 
+      "http://www.last.fm/": 1
     }
   }, 
   "http://cdn.yb0t.com/": {
@@ -3966,11 +4586,6 @@
     }, 
     "http://bs.serving-sys.com/": {
       "http://www.clubic.com/": 1
-    }
-  }, 
-  "http://8B3439.r.axf8.net/": {
-    "http://8B3439.t.axf8.net/": {
-      "http://www.intel.com/": 1
     }
   }, 
   "http://js.zol.com.cn/": {
@@ -4004,7 +4619,8 @@
   }, 
   "http://d.href.asia/": {
     "http://bid.openx.net/": {
-      "http://www.oricon.co.jp/": 1
+      "http://www.oricon.co.jp/": 1, 
+      "http://mainichi.jp/": 1
     }
   }, 
   "http://remnant.fmpub.net/": {
@@ -4096,9 +4712,11 @@
       "http://www.sanspo.com/": 1
     }, 
     "http://tags.expo9.exponential.com/": {
+      "http://www.macrumors.com/": 1, 
       "http://www.topix.com/": 1
     }, 
     "http://core.insightexpressai.com/": {
+      "http://www.forbes.com/": 1, 
       "http://www.nationalgeographic.com/": 1
     }, 
     "http://www.google-analytics.com/": {
@@ -4108,7 +4726,8 @@
       "http://newyork.cbslocal.com/": 1
     }, 
     "http://uac.advertising.com/": {
-      "http://www.modelmayhem.com/": 2
+      "http://www.modelmayhem.com/": 2, 
+      "http://www.miniclip.com/": 1
     }, 
     "http://c1.undertonevideo.com/": {
       "http://www.accuweather.com/": 1
@@ -4117,25 +4736,47 @@
       "http://www.theblaze.com/": 1
     }, 
     "http://ad.doubleclick.net/": {
-      "http://www.techradar.com/": 1
+      "http://www.examiner.com/": 1, 
+      "http://www.tvguide.com/": 16, 
+      "http://www.techradar.com/": 1, 
+      "http://sabq.org/": 2
     }, 
     "http://cdn.buzznet.com/": {
       "http://egotastic.com/": 1
     }, 
     "http://bs.serving-sys.com/": {
-      "http://advertising.dilandau.eu/": 1
+      "http://mashable.com/": 3, 
+      "http://www.metrolyrics.com/": 1, 
+      "http://advertising.dilandau.eu/": 1, 
+      "http://bleacherreport.com/": 1, 
+      "http://www.hollywoodreporter.com/": 6, 
+      "http://www.softonic.com/": 1, 
+      "http://searchenginewatch.com/": 2, 
+      "http://www.politico.com/": 2, 
+      "http://www.mtv.com/": 2, 
+      "http://espn.go.com/": 1
     }, 
     "http://m.doubleclick.net/": {
       "http://www.xda-developers.com/": 2
     }, 
     "http://cdn.doubleverify.com/": {
+      "http://www.fanfiction.net/": 2, 
+      "http://www.slate.com/": 1, 
+      "http://www.cafemom.com/": 3, 
+      "http://www.manta.com/": 1, 
+      "http://www.tmz.com/": 1, 
+      "http://weheartit.com/": 1, 
       "http://gawker.com/": 1
     }, 
     "http://indieclick.3janecdn.com/": {
       "http://www.cracked.com/": 1
     }, 
     "http://pagead2.googlesyndication.com/": {
-      "http://slashdot.org/": 1
+      "http://slashdot.org/": 1, 
+      "http://www.zerohedge.com/": 3, 
+      "http://www2.esmas.com/": 3, 
+      "http://www.nypost.com/": 1, 
+      "http://www.usmagazine.com/": 1
     }, 
     "http://static.polldaddy.com/": {
       "http://slashdot.org/": 1
@@ -4159,19 +4800,30 @@
       "http://www.celebuzz.com/": 2
     }, 
     "http://ib.adnxs.com/": {
-      "http://www.independent.co.uk/": 3
+      "http://www.independent.co.uk/": 3, 
+      "http://www.espncricinfo.com/": 2, 
+      "http://media2.legacy.com/": 1
     }, 
     "http://js.admeld.com/": {
-      "http://www.topix.com/": 1
+      "http://www.livejournal.com/": 1, 
+      "http://www.nypost.com/": 2, 
+      "http://boston.com/": 1, 
+      "http://www.topix.com/": 1, 
+      "http://www.tmz.com/": 4, 
+      "http://www.weather.com/": 1, 
+      "http://www.ft.com/": 1
     }, 
     "http://amch.questionmarket.com/": {
+      "http://www.nytimes.com/": 1, 
       "http://www.walmart.com/": 1
     }, 
     "http://a.collective-media.net/": {
       "http://www.chicagotribune.com/": 1
     }, 
     "http://ads.pointroll.com/": {
-      "http://www.fandango.com/": 2
+      "http://mashable.com/": 2, 
+      "http://www.fandango.com/": 2, 
+      "http://www.accuweather.com/": 1
     }, 
     "http://adm.sitescout.com/": {
       "http://www.theblaze.com/": 1
@@ -4189,24 +4841,95 @@
       "http://www.break.com/": 1
     }, 
     "http://s0.2mdn.net/": {
-      "http://www.autoblog.com/": 1
+      "http://mashable.com/": 1, 
+      "http://www.bigpoint.com/": 2, 
+      "http://www.bbc.co.uk/": 2, 
+      "http://ad.yieldmanager.com/": 2, 
+      "http://www.thehindu.com/": 3, 
+      "http://www.jeuxvideo.com/": 2, 
+      "http://www.hgtv.com/": 1, 
+      "http://www.forbes.com/": 1, 
+      "http://www.usmagazine.com/": 1, 
+      "http://sitemeter.com/": 1, 
+      "http://www.autoblog.com/": 1, 
+      "http://www.tmz.com/": 1, 
+      "http://www.time.com/": 1, 
+      "http://allrecipes.com/": 1, 
+      "http://www.espncricinfo.com/": 2, 
+      "http://www.rottentomatoes.com/": 1, 
+      "http://weheartit.com/": 1, 
+      "http://www.rr.com/": 2, 
+      "http://espn.go.com/": 2, 
+      "http://optimized-by.rubiconproject.com/": 1, 
+      "http://en.kioskea.net/": 1, 
+      "http://www.eonline.com/": 5, 
+      "http://www.globo.com/": 1, 
+      "http://www.azlyrics.com/": 1, 
+      "http://www.npr.org/": 1, 
+      "http://www.slideshare.net/": 1, 
+      "http://www.walmart.com/": 1, 
+      "http://www.manta.com/": 1, 
+      "http://www.nick.com/": 1, 
+      "http://www.wwe.com/": 1, 
+      "http://www.ign.com/": 2, 
+      "http://gizmodo.com/": 1, 
+      "http://www.20minutos.es/": 1, 
+      "http://online.wsj.com/": 1, 
+      "http://www.cafemom.com/": 3, 
+      "http://www.urbandictionary.com/": 2, 
+      "http://www.chicagotribune.com/": 1, 
+      "http://www.abril.com.br/": 1, 
+      "http://www.economist.com/": 2, 
+      "http://www.slate.com/": 1, 
+      "http://newyork.cbslocal.com/": 1, 
+      "http://slashdot.org/": 2, 
+      "http://www.lonelyplanet.com/": 1, 
+      "http://www2.esmas.com/": 4, 
+      "http://www.modelmayhem.com/": 1, 
+      "http://www.businessweek.com/": 1, 
+      "http://b.photobucket.com/": 1, 
+      "http://imp.bid.ace.advertising.com/": 2, 
+      "http://tagmanezt.terra.com/": 8, 
+      "http://www.terra.com.br/": 2, 
+      "http://msn.foxsports.com/": 1, 
+      "http://ads.cnn.com/": 1, 
+      "http://www.nytimes.com/": 1, 
+      "http://www.washingtonpost.com/": 1, 
+      "http://www.miniclip.com/": 1, 
+      "http://www.marketwatch.com/": 1, 
+      "http://www.mirror.co.uk/": 2, 
+      "http://techcrunch.com/": 1, 
+      "http://www.techradar.com/": 1, 
+      "http://www.theweathernetwork.com/": 2, 
+      "http://www.skysports.com/": 2, 
+      "http://www.ft.com/": 1, 
+      "http://searchenginewatch.com/": 3, 
+      "http://www.latimes.com/": 3, 
+      "http://us.sulekha.com/": 1, 
+      "http://www.theblaze.com/": 1
     }, 
     "http://c.betrad.com/": {
-      "http://gawker.com/": 1
+      "http://www.rr.com/": 1, 
+      "http://gawker.com/": 1, 
+      "http://www.manta.com/": 1
     }, 
     "http://voken.eyereturn.com/": {
-      "http://www.nationalgeographic.com/": 1
+      "http://www.nationalgeographic.com/": 1, 
+      "http://www.cnbc.com/": 1
     }, 
     "http://subscription-assets.ew.com/": {
       "http://www.ew.com/": 1
     }, 
     "http://creativeby1.unicast.com/": {
-      "http://www.gametrailers.com/": 1
+      "http://www.gametrailers.com/": 1, 
+      "http://www.mtv.com/": 1
     }, 
     "http://choices.truste.com/": {
-      "http://www.autoblog.com/": 1
+      "http://www.autoblog.com/": 1, 
+      "http://www.theblaze.com/": 1
     }, 
     "http://cdn.undertone.com/": {
+      "http://www.examiner.com/": 7, 
       "http://www.tvguide.com/": 1
     }, 
     "http://www.miniclip.com/": {
@@ -4216,7 +4939,10 @@
       "http://www.nypost.com/": 1
     }, 
     "http://motifcdn2.doubleclick.net/": {
-      "http://en.kioskea.net/": 1
+      "http://en.kioskea.net/": 1, 
+      "http://ads.cnn.com/": 1, 
+      "http://www.ask.com/": 1, 
+      "http://tagmanezt.terra.com/": 8
     }, 
     "http://o.aolcdn.com/": {
       "http://www.rr.com/": 2
@@ -4256,10 +4982,13 @@
   }, 
   "http://ak.dr.cyberwing.co.jp/": {
     "http://aimds.er.cyberwing.co.jp/": {
-      "http://www.biglobe.ne.jp/": 1
+      "http://www.biglobe.ne.jp/": 1, 
+      "http://www.nifty.com/": 1
     }, 
     "http://ak.dr.cyberwing.co.jp/": {
-      "http://www.cocolog-nifty.com/": 2
+      "http://www.biglobe.ne.jp/": 2, 
+      "http://www.cocolog-nifty.com/": 2, 
+      "http://www.nifty.com/": 2
     }, 
     "http://cas.criteo.com/": {
       "http://www.cocolog-nifty.com/": 1
@@ -4273,6 +5002,7 @@
       "http://www.thesun.co.uk/": 1
     }, 
     "http://optimized-by.rubiconproject.com/": {
+      "http://www.thesun.co.uk/": 3, 
       "http://www.mirror.co.uk/": 2
     }
   }, 
@@ -4288,7 +5018,12 @@
   }, 
   "http://maxymiser.hs.llnwd.net/": {
     "http://cg-global.maxymiser.com/": {
-      "http://www.santander.co.uk/": 2
+      "http://www.santander.co.uk/": 2, 
+      "http://www.virginmedia.com/": 1, 
+      "http://www.hsbc.co.uk/": 1, 
+      "http://www.autotrader.co.uk/": 1, 
+      "http://www.rr.com/": 1, 
+      "http://www.easyjet.com/": 1
     }
   }, 
   "http://addon.greetingmoods.com/": {
@@ -4301,7 +5036,12 @@
       "http://daily.co.jp/": 1
     }, 
     "http://bid.openx.net/": {
-      "http://www.rlslog.net/": 1
+      "http://notice.kakaku.com/": 2, 
+      "http://daily.co.jp/": 3, 
+      "http://www.rlslog.net/": 1, 
+      "http://www.video2mp3.net/": 1, 
+      "http://www.vanguardngr.com/": 1, 
+      "http://www.exbii.com/": 1
     }
   }, 
   "http://talkfusion.com/": {
@@ -4311,16 +5051,28 @@
   }, 
   "http://ib.adnxs.com/": {
     "http://cdn.amgdgt.com/": {
-      "http://www.autotrader.co.uk/": 1
+      "http://www.autotrader.co.uk/": 1, 
+      "http://www.bhaskar.com/": 1
     }, 
     "http://ad.doubleclick.net/": {
+      "http://www.chicagotribune.com/": 1, 
       "http://www.sidereel.com/": 2
     }, 
     "http://c1.rfihub.net/": {
-      "http://www.csmonitor.com/": 1
+      "http://adserving.cpxinteractive.com/": 1, 
+      "http://www.csmonitor.com/": 1, 
+      "http://www.theage.com.au/": 1
     }, 
     "http://ad.yieldmanager.com/": {
-      "http://www.hindustantimes.com/": 1
+      "http://reliancenetconnect.co.in/": 1, 
+      "http://images.songspk.pk/": 1, 
+      "http://www.in.com/": 1, 
+      "http://www.smh.com.au/": 3, 
+      "http://adserving.cpxinteractive.com/": 6, 
+      "http://www.hindustantimes.com/": 1, 
+      "http://www.ziddu.com/": 1, 
+      "http://ads.tlvmedia.com/": 2, 
+      "http://thechive.com/": 1
     }, 
     "http://js.admeld.com/": {
       "http://www.telegraph.co.uk/": 2
@@ -4380,7 +5132,14 @@
   }, 
   "http://cbjs.baidu.com/": {
     "http://cb.baidu.com/": {
-      "http://cbjs.baidu.com/": 1
+      "http://cbjs.baidu.com/": 1, 
+      "http://www.gfan.com/": 3, 
+      "http://www.tiexue.net/": 1, 
+      "http://zhibo8.cc/": 2, 
+      "http://yyets.com/": 1, 
+      "http://www.sootoo.com/": 6, 
+      "http://www.weiphone.com/": 1, 
+      "http://www.haodf.com/": 2
     }
   }, 
   "http://shared.9msn.com.au/": {
@@ -4393,12 +5152,15 @@
   }, 
   "http://ipic.staticsdo.com/": {
     "http://ipic.staticsdo.com/": {
-      "http://new.sdo.com/": 1
+      "http://www.ku6.com/": 1, 
+      "http://new.sdo.com/": 1, 
+      "http://www.qidian.com/": 1
     }
   }, 
   "http://boursoramabanque.solution.weborama.fr/": {
     "http://elstatic.weborama.fr/": {
-      "http://tempsreel.nouvelobs.com/": 2
+      "http://tempsreel.nouvelobs.com/": 2, 
+      "http://www.liberation.fr/": 2
     }
   }, 
   "http://graphics8.nytimes.com/": {
@@ -4424,7 +5186,8 @@
   }, 
   "http://cdn.taboolasyndication.com/": {
     "http://cdn.taboolasyndication.com/": {
-      "http://www.hollywoodreporter.com/": 1
+      "http://www.hollywoodreporter.com/": 1, 
+      "http://www.theblaze.com/": 1
     }, 
     "http://trc.taboolasyndication.com/": {
       "http://www.theblaze.com/": 1
@@ -4437,6 +5200,7 @@
   }, 
   "http://d8.zedo.com/": {
     "http://d7.zedo.com/": {
+      "http://eenadu.net/": 2, 
       "http://www.thehindu.com/": 1
     }
   }, 
@@ -4448,7 +5212,12 @@
       "http://www.in.com/": 1
     }, 
     "http://ad.yieldmanager.com/": {
-      "http://ads.tlvmedia.com/": 1
+      "http://reliancenetconnect.co.in/": 1, 
+      "http://www.ultimate-guitar.com/": 1, 
+      "http://images.songspk.pk/": 1, 
+      "http://adserving.cpxinteractive.com/": 5, 
+      "http://ads.tlvmedia.com/": 2, 
+      "http://thechive.com/": 1
     }, 
     "http://ads.us.e-planning.net/": {
       "http://ad.yieldmanager.com/": 1
@@ -4547,7 +5316,10 @@
   }, 
   "http://akhtm.nspmotion.com/": {
     "http://akhtm.nspmotion.com/": {
-      "http://www.estadao.com.br/": 4
+      "http://www.r7.com/": 1, 
+      "http://esporte.uol.com.br/": 1, 
+      "http://www.estadao.com.br/": 4, 
+      "http://www.folha.uol.com.br/": 1
     }
   }, 
   "http://adv.r7.com/": {
@@ -4572,17 +5344,22 @@
   }, 
   "http://hits.truehits.in.th/": {
     "http://lvs.truehits.in.th/": {
-      "http://kapook.com/": 2
+      "http://www.sanook.com/": 1, 
+      "http://kapook.com/": 2, 
+      "http://www.mthai.com/": 2
     }
   }, 
   "http://core.insightexpressai.com/": {
     "http://core.insightexpressai.com/": {
+      "http://www.forbes.com/": 1, 
       "http://www.nationalgeographic.com/": 1
     }
   }, 
   "http://maps.googleapis.com/": {
     "http://maps.gstatic.com/": {
-      "http://wikimapia.org/": 3
+      "http://www.panoramio.com/": 2, 
+      "http://wikimapia.org/": 3, 
+      "http://ca.gov/": 1
     }
   }, 
   "http://y1.ifengimg.com/": {
@@ -4608,10 +5385,15 @@
   }, 
   "http://www.lijit.com/": {
     "http://apr.lijit.com/": {
-      "http://www.video2mp3.net/": 1
+      "http://mgid.com/": 2, 
+      "http://www.video2mp3.net/": 1, 
+      "http://optimized-by.rubiconproject.com/": 1
     }, 
     "http://www.lijit.com/": {
-      "http://tweetmeme.com/": 2
+      "http://tweetmeme.com/": 2, 
+      "http://www.gsmarena.com/": 2, 
+      "http://imgur.com/": 2, 
+      "http://twitpic.com/": 2
     }
   }, 
   "http://adp.adview.pl/": {
@@ -4694,7 +5476,11 @@
   }, 
   "http://cpro.baidu.com/": {
     "http://pos.baidu.com/": {
-      "http://yyets.com/": 4
+      "http://cnbeta.com/": 3, 
+      "http://www.huanqiu.com/": 1, 
+      "http://zhibo8.cc/": 2, 
+      "http://yyets.com/": 4, 
+      "http://www.sootoo.com/": 1
     }
   }, 
   "http://ad78.neodatagroup.com/": {
@@ -4750,11 +5536,6 @@
       "http://www.pchome.net/": 1
     }
   }, 
-  "http://E894B5.r.axf8.net/": {
-    "http://E894B5.t.axf8.net/": {
-      "http://www.overstock.com/": 1
-    }
-  }, 
   "http://www.chinanews.com/": {
     "http://lc.chinanews.com:8090/": {
       "http://www.chinanews.com/": 1
@@ -4769,7 +5550,7 @@
     "http://www.google-analytics.com/": {
       "http://www.whitepages.com/": 1
     }, 
-    "http://E35FBF.r.axf8.net/": {
+    "http://e35fbf.r.axf8.net/": {
       "http://www.whitepages.com/": 1
     }
   }, 
@@ -4778,7 +5559,9 @@
       "http://d3.zedo.com/": 5
     }, 
     "http://d7.zedo.com/": {
-      "http://www.tv-links.eu/": 1
+      "http://thepiratebay.se/": 1, 
+      "http://www.tv-links.eu/": 1, 
+      "http://www.1channel.ch/": 2
     }, 
     "http://d2.zedo.com/": {
       "http://www.ndtv.com/": 16
@@ -4788,7 +5571,7 @@
     "http://www.intel.com/": {
       "http://www.intel.com/": 1
     }, 
-    "http://8B3439.r.axf8.net/": {
+    "http://8b3439.r.axf8.net/": {
       "http://www.intel.com/": 1
     }
   }, 
@@ -4804,12 +5587,15 @@
   }, 
   "http://tps30.doubleverify.com/": {
     "http://cdn.doubleverify.com/": {
-      "http://weheartit.com/": 1
+      "http://weheartit.com/": 1, 
+      "http://www.tmz.com/": 1, 
+      "http://www.fanfiction.net/": 2
     }
   }, 
   "http://id-cdn.effectivemeasure.net/": {
     "http://www9.effectivemeasure.net/": {
-      "http://us.viva.co.id/": 1
+      "http://us.viva.co.id/": 1, 
+      "http://kompas.com/": 1
     }
   }, 
   "http://acs.56.com/": {
@@ -4845,12 +5631,16 @@
   }, 
   "http://rt.liftdna.com/": {
     "http://www.googletagservices.com/": {
-      "http://thechive.com/": 1
+      "http://www.xda-developers.com/": 1, 
+      "http://thechive.com/": 1, 
+      "http://ads.xda-developers.com/": 3
     }, 
     "http://rt.liftdna.com/": {
+      "http://www.xda-developers.com/": 1, 
       "http://ads.xda-developers.com/": 3
     }, 
     "http://geo.liftdna.com/": {
+      "http://www.xda-developers.com/": 1, 
       "http://ads.xda-developers.com/": 3
     }
   }, 
@@ -4864,12 +5654,17 @@
   }, 
   "http://ads.pubmatic.com/": {
     "http://showadsak.pubmatic.com/": {
+      "http://www.tvguide.com/": 1, 
       "http://www.csmonitor.com/": 2
     }, 
     "http://image3.pubmatic.com/": {
-      "http://www.ksl.com/": 1
+      "http://www.politico.com/": 1, 
+      "http://www.theweathernetwork.com/": 1, 
+      "http://www.ksl.com/": 1, 
+      "http://www.dailymotion.com/": 1
     }, 
     "http://ads.pubmatic.com/": {
+      "http://www.tvguide.com/": 2, 
       "http://www.csmonitor.com/": 1
     }
   }, 
@@ -4890,7 +5685,8 @@
   }, 
   "http://ad2.netshelter.net/": {
     "http://ad.doubleclick.net/": {
-      "http://www.macrumors.com/": 3
+      "http://www.macrumors.com/": 3, 
+      "http://www.gsmarena.com/": 1
     }
   }, 
   "http://content.mqcdn.com/": {
@@ -4913,7 +5709,16 @@
   }, 
   "http://nexus.ensighten.com/": {
     "http://nexus.ensighten.com/": {
-      "http://www.rbcroyalbank.com/": 3
+      "http://www.united.com/": 3, 
+      "http://www.jcpenney.com/": 2, 
+      "http://comcast.com/": 2, 
+      "http://lenovo.com/": 1, 
+      "http://www.monster.com/": 1, 
+      "http://www.staples.com/": 5, 
+      "http://us.norton.com/": 3, 
+      "http://www.rbcroyalbank.com/": 3, 
+      "http://www.reuters.com/": 1, 
+      "http://www.homedepot.com/": 3
     }, 
     "http://www.hlserve.com/": {
       "http://www.staples.com/": 1
@@ -4939,7 +5744,12 @@
   }, 
   "http://z-ecx.images-amazon.com/": {
     "http://z-ecx.images-amazon.com/": {
-      "http://www.amazon.ca/": 1
+      "http://www.amazon.it/": 3, 
+      "http://www.amazon.de/": 1, 
+      "http://www.amazon.fr/": 1, 
+      "http://www.amazon.ca/": 1, 
+      "http://www.amazon.com/": 2, 
+      "http://www.amazon.co.jp/": 1
     }
   }, 
   "http://www.hotpepper.jp/": {
@@ -4960,7 +5770,12 @@
   }, 
   "http://cdn.amgdgt.com/": {
     "http://ad.amgdgt.com/": {
-      "http://www.autotrader.co.uk/": 1
+      "http://www.makeuseof.com/": 1, 
+      "http://www.bhaskar.com/": 2, 
+      "http://img-cdn.mediaplex.com/": 1, 
+      "http://ib.adnxs.com/": 4, 
+      "http://www.autotrader.co.uk/": 1, 
+      "http://www.match.com/": 1
     }
   }, 
   "http://s.mynet.com/": {
@@ -4980,7 +5795,9 @@
   }, 
   "http://servedby.flashtalking.com/": {
     "http://cdn.flashtalking.com/": {
-      "http://www.oneindia.in/": 1
+      "http://www.oneindia.in/": 1, 
+      "http://www.chip.de/": 2, 
+      "http://www.bild.de/": 2
     }
   }, 
   "http://static.nownews.com/": {
@@ -5030,7 +5847,8 @@
   }, 
   "http://ad.amgdgt.com/": {
     "http://cdn.amgdgt.com/": {
-      "http://img-cdn.mediaplex.com/": 1
+      "http://img-cdn.mediaplex.com/": 1, 
+      "http://www.match.com/": 1
     }
   }, 
   "http://tag.admeld.com/": {
@@ -5129,10 +5947,14 @@
   }, 
   "http://cdn.krxd.net/": {
     "http://services.krxd.net/": {
-      "http://technorati.com/": 1
+      "http://www.sfgate.com/": 1, 
+      "http://technorati.com/": 1, 
+      "http://www.ft.com/": 1
     }, 
     "http://cdn.krxd.net/": {
-      "http://technorati.com/": 1
+      "http://www.sfgate.com/": 1, 
+      "http://technorati.com/": 1, 
+      "http://www.ft.com/": 1
     }
   }, 
   "http://jscss.freeones.com/": {
@@ -5165,10 +5987,12 @@
   }, 
   "http://ba.ccm2.net/": {
     "http://ba.ccm2.net/": {
-      "http://en.kioskea.net/": 1
+      "http://en.kioskea.net/": 1, 
+      "http://www.commentcamarche.net/": 1
     }, 
     "http://rtax.criteo.com/": {
-      "http://en.kioskea.net/": 1
+      "http://en.kioskea.net/": 1, 
+      "http://www.commentcamarche.net/": 1
     }
   }, 
   "http://d.monetate.net/": {

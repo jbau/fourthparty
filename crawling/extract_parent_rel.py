@@ -28,7 +28,7 @@ read_10k = csv.reader(open('10k.txt', 'rb'), delimiter='\n')
 alexa_10k = {}
 
 for row in read_10k:
-    alexa_10k[row[0]]=1
+    alexa_10k[row[0].lower()]=1
 
 print len(alexa_10k)
 
@@ -55,12 +55,12 @@ with con:
 		#print (row[7],  "   ", row[2],  "\n")
 		db[row[1]]={}
 		db[row[1]]['id'] = row[0]
-		db[row[1]]['doc_loc'] = row[2]
+		db[row[1]]['doc_loc'] = row[2].lower()
 		db[row[1]]['disposition'] = row[3]
 		db[row[1]]['parent_id'] = row[4]
 		db[row[1]]['method'] = row[5]
 		db[row[1]]['is_static'] = row[6]
-		db[row[1]]['src'] = row[7]
+		db[row[1]]['src'] = row[7].lower()
                 
 
         print len(db)
@@ -80,15 +80,15 @@ with con:
 		if row[4] in db: #make sure parent was recorded by db
 			parent=db[row[4]]
 			parent_FQON=constructFQON(parent['src'],parent['doc_loc'])
-			if successiveDomainFind(urlparse.urlparse(row[2]).netloc, alexa_10k): #make sure document.location is in alexa_10k
+			if successiveDomainFind(urlparse.urlparse(row[2].lower()).netloc, alexa_10k): #make sure document.location is in alexa_10k
                             if parent_FQON not in result:  #found new parent, so create entry
                                 result[parent_FQON]={}
-                            child_origin=constructFQON(row[7],row[2])
-                            doc_origin=constructFQON(row[2],row[2]) 
+                            child_origin=constructFQON(row[7].lower(),row[2].lower())
+                            doc_origin=constructFQON(row[2].lower(),row[2].lower()) 
                             if child_origin not in result[parent_FQON]: #new parent->child relationship, initiate it
                                 result[parent_FQON][child_origin]={}
                             if doc_origin not in result[parent_FQON][child_origin]: #new doc_location on which this parent->child relationship occurs
-                                result[parent_FQON][child_origin]={doc_origin:1}    #count that the relationship occurs once
+                                result[parent_FQON][child_origin][doc_origin]=1    #count that the relationship occurs once
                             else:                                                   #found existing parent->child relationship at this doc_location
                                 result[parent_FQON][child_origin][doc_origin]+=1    #increment
           
