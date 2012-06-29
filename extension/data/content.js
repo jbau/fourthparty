@@ -332,7 +332,7 @@ function makeFunctionProxy(object, functionName, func) {
 	function() {
 		//the 'arguments' variable stores the argument for the function that's being hooked (i.e., createElement)
         if (functionName == "document.createElement" && 
-            arguments[0]=="script") { 
+            arguments[0].toLowerCase()=="script") { 
             //try{throw new Error("StackTrace");}
             //catch (e){};
             var scr = func.apply(object,arguments);
@@ -348,7 +348,7 @@ function makeFunctionProxy(object, functionName, func) {
             //console.trace();            
         }
         if (functionName == "document.write" && 
-            arguments[0].indexOf("script") != -1) {
+            (arguments[0].toLowerCase()).indexOf("script") != -1) {
             var tmp_arg = arguments[0];
             var replacement = '<script __fp_curScriptDuringCreate="' + document.currentScript.getAttribute('__fp_tag') + '" __fp_creationMethod="document.write" '; //+' __fp_pageID="'+self.windowID+'"'; 
             //alert(replacement);
