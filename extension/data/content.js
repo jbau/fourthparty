@@ -331,37 +331,36 @@ function makeFunctionProxy(object, functionName, func) {
 	},
 	function() {
 		//the 'arguments' variable stores the argument for the function that's being hooked (i.e., createElement)
-		var dummy_arg = argument[0];//we use this to remove any sideeffects when we do tolowercase()
-		if (functionName == "document.createElement" && 
-		    arguments[0].toLowerCase()=="script") { 
-		    //try{throw new Error("StackTrace");}
-		    //catch (e){};
-		    var scr = func.apply(object,arguments);
-		    //scr.addEventListener('load',alert_source(scr));
-		    //scr.setAttribute('__fp_sTag',  document.location + ":" + (s_tag++));
-		    scr.setAttribute('__fp_curScriptDuringCreate',  document.currentScript.getAttribute('__fp_tag'));
-		    scr.setAttribute('__fp_creationMethod',  'document.createElement');
-		    //scr.setAttribute('__fp_pageID',self.windowID);
-		    //dump("windowID: "+pageManager.pageIDFromWindow(self.windowID)+"\n");
+        if (functionName == "document.createElement" && 
+            arguments[0].toLowerCase()=="script") { 
+            //try{throw new Error("StackTrace");}
+            //catch (e){};
+            var scr = func.apply(object,arguments);
+            //scr.addEventListener('load',alert_source(scr));
+            //scr.setAttribute('__fp_sTag',  document.location + ":" + (s_tag++));
+            scr.setAttribute('__fp_curScriptDuringCreate',  document.currentScript.getAttribute('__fp_tag'));
+            scr.setAttribute('__fp_creationMethod',  'document.createElement');
+            //scr.setAttribute('__fp_pageID',self.windowID);
+	    //dump("windowID: "+pageManager.pageIDFromWindow(self.windowID)+"\n");
 
-		    return scr;
-		    //console.log(object.location);
-		    //console.trace();            
-		}
-		if (functionName == "document.write" && 
-		    (dummy_arg.toLowerCase()).indexOf("script") != -1) {
-		    var tmp_arg = arguments[0];
-		    var replacement = '<script __fp_curScriptDuringCreate="' + document.currentScript.getAttribute('__fp_tag') + '" __fp_creationMethod="document.write" '; //+' __fp_pageID="'+self.windowID+'"'; 
-		    //alert(replacement);
-		    arguments[0]=tmp_arg.replace(/<script/gi, replacement); 
-		    //try{throw new Error("StackTrace");}
-		    //catch (e){};
-		    //console.log(object.location);
-		    //console.trace();
-		}
+            return scr;
+            //console.log(object.location);
+            //console.trace();            
+        }
+        if (functionName == "document.write" && 
+            (arguments[0].toLowerCase()).indexOf("script") != -1) {
+            var tmp_arg = arguments[0];
+            var replacement = '<script __fp_curScriptDuringCreate="' + document.currentScript.getAttribute('__fp_tag') + '" __fp_creationMethod="document.write" '; //+' __fp_pageID="'+self.windowID+'"'; 
+            //alert(replacement);
+            arguments[0]=tmp_arg.replace(/<script/gi, replacement); 
+            //try{throw new Error("StackTrace");}
+            //catch (e){};
+            //console.log(object.location);
+            //console.trace();
+        }
 
 
-		//self.port.emit('instrumentation',{});
+        //self.port.emit('instrumentation',{});
 		//logCall(functionName, arguments);
 		return func.apply(object, arguments);
 	},
